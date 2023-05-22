@@ -1,0 +1,491 @@
+@import "style.scss";
+
+@media screen and (min-width: 1440px){
+    #background{
+        height: 900px;
+
+        nav ul li{
+            padding-right:70px;
+            font-size: 160%;
+        }
+
+        #logo img{
+            width: 200px;
+            height: 130px;
+        }
+    
+        #heading-text{
+            h1{
+                font-size: 650%;
+                letter-spacing: 20px;
+            }
+            h2{
+                font-size: 200%;
+                letter-spacing: 10px;
+            }
+            i{
+                font-size:1800%;
+                text-shadow: 5px 5px $crna;
+            }
+        }
+    }
+
+    .title{
+        h3{
+            font-size: 350%;
+        }
+    }
+    #skills{
+        #icon-holder{
+            .one-icon{
+                i{
+                    font-size: 1500%;
+                }
+                p{
+                    font-size: 180%;
+                }
+            }
+        }
+       
+    }
+   
+    figcaption{
+        font-size:2rem ;
+    }
+    #projects{
+        #projects-holder{
+            img{
+                width: 32rem;       //SVE PREBACITI U REM
+            }
+        }
+    }
+
+    #author{
+        #author-holder{
+            #info{
+                div{
+                    p,h4{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:32.5rem;
+                }
+            }
+        }
+    }
+
+
+    footer{
+        i{
+            font-size: 2.0rem;
+        }
+        p{
+            font-size: 1.9rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #background{
+        height: 600px;
+
+        nav ul li{
+            padding-right:50px;
+            font-size: 140%;
+        }
+
+        #logo img{
+            width: 140px;
+            height: 70px;
+        }
+    
+
+        #heading-text{
+            h1{
+                font-size: 400%;
+                letter-spacing: 10px;
+            }
+            h2{
+                font-size: 120%;
+                letter-spacing: 4px;
+            }
+            i{
+                font-size:1200%;
+                text-shadow: 5px 5px $crna;
+            }
+        }
+    }
+
+
+    .title{
+        h3{
+            font-size: 200%;
+        }
+    }
+    #skills{
+        #icon-holder{
+            .one-icon{
+                /*padding:2% 3%;*/
+                i{
+                    font-size: 800%;
+                }
+                p{
+                    font-size: 120%;
+                }
+            }
+        }
+       
+    }
+    
+
+
+    figcaption{
+        font-size:1.3rem ;
+    }
+    #projects{
+        #projects-holder{
+            img{
+                width: 22rem;       
+            }
+        }
+    }
+
+
+    #author{
+        #author-holder{
+            #info{
+                div{
+                    p,h4{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:22.5rem;
+                }
+            }
+        }
+    }
+
+
+    footer{
+        i{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    #background{
+        height: 400px;
+
+        nav ul li{
+            padding-right:35px;
+            font-size: 115%;
+        }
+
+        #logo img{
+            width: 130px;
+            height: 60px;
+        }
+    
+
+        #heading-text{
+            h1{
+                font-size: 320%;
+                letter-spacing: 7px;
+            }
+            h2{
+                font-size: 100%;
+                letter-spacing: 3px;
+            }
+            i{
+                font-size:1000%;
+                text-shadow: 5px 5px $crna;
+            }
+        }
+    }
+
+
+    .title{
+        h3{
+            font-size: 160%;
+        }
+    }
+    #skills{
+        #icon-holder{
+            
+            .one-icon{
+                padding:2% 3%;
+                i{
+                    font-size: 600%;
+                }
+                p{
+                    font-size: 100%;
+                }
+            }
+        }
+       
+    }
+
+
+    figcaption{
+        font-size:1.0rem ;
+    }
+    #projects{
+        #projects-holder{
+            img{
+                width: 17rem;       
+            }
+        }
+    }
+
+
+    #author{
+        #author-holder{
+            #info{
+                div{
+                    p,h4{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:16rem;
+                }
+            }
+        }
+    }
+
+
+    footer{
+        i{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 576px){
+    #background{
+        height: 320px;
+
+        nav ul li{
+            padding-right:30px;
+            font-size: 80%;
+        }
+
+        #logo img{
+            width: 100px;
+            height: 30px;
+        }
+    
+
+        #heading-text{
+            h1{
+                font-size: 270%;
+                letter-spacing: 6px;
+            }
+            h2{
+                font-size: 80%;
+                letter-spacing: 2.5px;
+            }
+            i{
+                font-size:750%;
+                text-shadow: 3.5px 3.5px $crna;
+            }
+        }
+    }
+
+
+    .title{
+        h3{
+            font-size: 130%;
+        }
+    }
+    #skills{
+        #icon-holder{
+            .one-icon{
+                padding:2%;
+                i{
+                    font-size: 400%;
+                }
+                p{
+                    font-size: 80%;
+                }
+            }
+        }
+       
+    }
+
+
+    figcaption{
+        font-size:0.6rem ;
+    }
+    #projects{
+        #projects-holder{
+            img{
+                width: 12.5rem;       
+            }
+        }
+    }
+
+
+    #author{
+        #author-holder{
+            #info{
+                div{
+                    p,h4{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:11.5rem;
+                }
+            }
+        }
+    }
+
+
+    footer{
+        i{
+            font-size: 1.0rem;
+            padding:12.5px 35px;
+        }
+        p{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 450px){
+    #background{
+        height: 280px;
+
+        #logo{
+            display: none;
+        }
+        header div{
+            flex-direction: column;
+        }
+        nav{
+            padding-top:2px;
+            padding-bottom:10px;
+        }
+        nav ul li{
+            padding-right:20px;
+            font-size: 60%;
+        }
+
+        #logo img{
+            width: 90px;
+            height: 20px;
+        }
+    
+
+        #heading-text{
+            margin:7%;
+            h1,h2{
+                padding-bottom:3.5%;
+            }
+            h1{
+                font-size: 120%;
+                letter-spacing: 4px;
+                //word-wrap: break-word; //NE RADI!!!
+                display: inline-block; //NI OVO NE RADI!!!
+            }
+            h2{
+                font-size: 20%;
+                letter-spacing: 2px;
+            }
+            i{
+                font-size:450%;
+                text-shadow: 2px 2px $crna;
+                padding-top:40%;
+            }
+        }
+    }
+
+    .title{
+        margin:4% auto;
+        h3{
+            font-size: 115%;
+        }
+    }
+    #skills{
+        #icon-holder{
+            flex-direction: column;
+            .one-icon{
+                width: 65%;
+                padding:5% 0%;
+                i{
+                    font-size: 500%;
+                }
+                p{
+                    font-size: 50%;
+                }
+            }
+        }
+       
+    }
+
+
+    figcaption{
+        font-size:0.7rem ;
+    }
+    #projects{
+        #projects-holder{
+            img{
+                width: 14rem;       
+            }
+        }
+    }
+
+
+    #author{
+        #author-holder{
+            flex-direction: column;
+            #info{
+                order:2;
+                padding-top:5%;
+                div{
+                    p,h4{
+                        font-size: 1.0rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:12.5rem;
+                    order:1;
+                }
+            }
+        }
+    }
+    footer{
+        i{
+            padding:10px 25px;
+            font-size: 0.85rem;
+        }
+        p{
+            font-size: 0.75rem;
+        }
+    }
+}
