@@ -99,14 +99,36 @@
         }
     }
 
-    footer{
-        i{
-            font-size: 2.0rem;
-        }
-        p{
-            font-size: 1.9rem;
+    #services{
+        #services-holder{
+            .one-service{
+                i{
+                    font-size: 7rem;
+                }
+                p{
+                    font-size: 1.25rem;
+                }
+                h4{
+                    font-size: 1.5rem;
+                }
+            }
         }
     }
+
+    footer{
+        nav ul li{
+         i{
+             font-size: 1.5rem;
+             padding:0px 20px;
+         }
+        }
+        i{
+             font-size: 1.5rem;
+        }
+        p{
+             font-size: 1.6rem;
+        }
+     }
 }
 
 @media screen and (max-width: 1024px){
@@ -214,13 +236,35 @@
         }
     }
 
+    #services{
+        #services-holder{
+            .one-service{
+                i{
+                    font-size: 5rem;
+                }
+                p{
+                    font-size: 0.75rem;
+                }
+                h4{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
     footer{
+       nav ul li{
         i{
-            font-size: 1.5rem;
+            font-size: 1.0rem;
+            padding:0px 15px;
         }
-        p{
-            font-size: 1.4rem;
-        }
+       }
+       i{
+            font-size: 1.0rem;
+       }
+       p{
+            font-size: 1.1rem;
+       }
     }
 }
 
@@ -235,7 +279,7 @@
         }
 
         #logo img{
-            width: 8rem;
+            width: 7rem;
             height: 3.5rem;
         }
     
@@ -345,14 +389,36 @@
         }
     }
 
-    footer{
-        i{
-            font-size: 1.3rem;
-        }
-        p{
-            font-size: 1.1rem;
+    #services{
+        #services-holder{
+            .one-service{
+                i{
+                    font-size: 4rem;
+                }
+                p{
+                    font-size: 0.55rem;
+                }
+                h4{
+                    font-size: 0.6rem;
+                }
+            }
         }
     }
+
+    footer{
+        nav ul li{
+         i{
+             font-size: 0.8rem;
+             padding:0px 12px;
+         }
+        }
+        i{
+            font-size: 0.8rem;
+        }
+        p{
+             font-size: 0.9rem;
+        }
+     }
 }
 
 
@@ -480,22 +546,48 @@
         }
     }
 
-    footer{
-        i{
-            font-size: 1.0rem;
-            padding:12.5px 35px;
-        }
-        p{
-            font-size: 0.9rem;
+    #services{
+        #services-holder{
+            .one-service{
+                i{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 0.35rem;
+                }
+                h4{
+                    font-size: 0.3rem;
+                }
+            }
         }
     }
+
+    footer{
+        nav ul li{
+            text-align: left;
+         i{
+            font-size: 0.6rem;
+            padding:0px 5px;
+         }
+         nav ul li:first-child{
+            padding-left:-10px;
+        }
+        }
+        i{
+            font-size: 0.6rem;
+            padding-right:60px;
+        }
+        p{
+             font-size: 0.6rem;
+        }
+     }
 }
 
 
 
 @media screen and (max-width: 450px){
     #background{
-        height: 280px;
+        height: 650px;
 
         #logo{
             padding:0.5rem;
@@ -508,13 +600,13 @@
             padding-bottom:10px;
         }
         nav ul li{
-            padding-right:2.5rem;
-            font-size: 0.5rem;
+            padding-right:1rem;
+            font-size: 0.65rem;
         }
 
         #logo img{
-            width: 5.5rem;
-            height: 2.2rem;
+            width: 5rem;
+            height: 2.5rem;
         }
     
 
@@ -642,13 +734,42 @@
         }
     }
 
-    footer{
-        i{
-            padding:10px 25px;
-            font-size: 0.85rem;
-        }
-        p{
-            font-size: 0.75rem;
+    #services{
+        #services-holder{
+            flex-direction: column;
+            .one-service{
+                width: 75%;
+                i{
+                    font-size: 6rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                h4{
+                    font-size: 1rem;
+                }
+            }
         }
     }
+
+    footer{
+        height: 25px;
+        nav ul li{
+            text-align: left;
+         i{
+            font-size: 0.3rem;
+            padding:0px 4px;
+         }
+         nav ul li:first-child{
+            padding-left:-30px;
+        }
+        }
+        i{
+            font-size: 0.65rem;
+            padding-right:10px;
+        }
+        p{
+             font-size: 0.6rem;
+        }
+     }
 }
