@@ -5,44 +5,50 @@
         height: 900px;
 
         nav ul li{
-            padding-right:70px;
-            font-size: 160%;
+            padding-right:4rem;
+            font-size: 1.5rem;
         }
 
         #logo img{
-            width: 200px;
-            height: 130px;
+            width: 12.5rem;
+            height: 8.1rem;
         }
     
         #heading-text{
             h1{
-                font-size: 650%;
-                letter-spacing: 20px;
+                font-size: 7rem;
+                letter-spacing: 0.85rem;
             }
             h2{
-                font-size: 200%;
-                letter-spacing: 10px;
+                font-size: 2rem;
+                letter-spacing: 0.7rem;
             }
             i{
-                font-size:1800%;
-                text-shadow: 5px 5px $crna;
+                font-size:9rem;
+                text-shadow: 0.35rem 0.35rem $crna;
             }
         }
     }
 
     .title{
         h3{
-            font-size: 350%;
+            font-size: 3.3rem;
         }
     }
     #skills{
         #icon-holder{
             .one-icon{
                 i{
-                    font-size: 1500%;
+                    font-size: 8rem;
                 }
                 p{
-                    font-size: 180%;
+                    font-size: 1.3rem;
+                }
+                span{
+                    font-size: 1.5rem;
+                }
+                progress{
+                    height: 14px;
                 }
             }
         }
@@ -54,10 +60,14 @@
     }
     #projects{
         #projects-holder{
-            img{
-                width: 32rem;       //SVE PREBACITI U REM
+            .one-project{
+               img{
+                width:600px; 
+                height: 350px;      //SVE PREBACITI U REM
             }
+            }  
         }
+           
     }
 
     #author{
@@ -77,6 +87,17 @@
         }
     }
 
+    #contact{
+        #contact-holder{
+            #form{
+                width: 25rem;
+            }
+        }
+        iframe{
+            width: 35rem;
+            height: 35rem;
+        }
+    }
 
     footer{
         i{
@@ -93,28 +114,28 @@
         height: 600px;
 
         nav ul li{
-            padding-right:50px;
-            font-size: 140%;
+            padding-right:3.3rem;
+            font-size: 1.0rem;
         }
 
         #logo img{
-            width: 140px;
-            height: 70px;
+            width: 9rem;
+            height: 4.5rem;
         }
     
 
         #heading-text{
             h1{
-                font-size: 400%;
-                letter-spacing: 10px;
+                font-size: 4.5rem;
+                letter-spacing: 0.5rem;
             }
             h2{
-                font-size: 120%;
-                letter-spacing: 4px;
+                font-size: 1.0rem;
+                letter-spacing: 0.3rem;
             }
             i{
-                font-size:1200%;
-                text-shadow: 5px 5px $crna;
+                font-size:8rem;
+                /*text-shadow: 5px 5px $crna;*/
             }
         }
     }
@@ -122,18 +143,23 @@
 
     .title{
         h3{
-            font-size: 200%;
+            font-size: 2.5rem;
         }
     }
     #skills{
         #icon-holder{
             .one-icon{
-                /*padding:2% 3%;*/
                 i{
-                    font-size: 800%;
+                    font-size: 5.5rem;
                 }
                 p{
-                    font-size: 120%;
+                    font-size: 0.8rem;
+                }
+                span{
+                    font-size: 0.8rem;
+                }
+                progress{
+                    height: 10px;
                 }
             }
         }
@@ -147,9 +173,14 @@
     }
     #projects{
         #projects-holder{
-            img{
-                width: 22rem;       
+            .one-project{
+                padding: 2rem 0.7rem;
+                img{
+                    width:300px; 
+                    height: 150px;      
+                }
             }
+            
         }
     }
 
@@ -171,6 +202,17 @@
         }
     }
 
+    #contact{
+        #contact-holder{
+            #form{
+                width: 15rem;
+            }
+        }
+        iframe{
+            width: 25rem;
+            height: 25rem;
+        }
+    }
 
     footer{
         i{
@@ -188,28 +230,28 @@
         height: 400px;
 
         nav ul li{
-            padding-right:35px;
-            font-size: 115%;
+            padding-right:3.0rem;
+            font-size: 0.7rem;
         }
 
         #logo img{
-            width: 130px;
-            height: 60px;
+            width: 8rem;
+            height: 3.5rem;
         }
     
 
         #heading-text{
             h1{
-                font-size: 320%;
-                letter-spacing: 7px;
+                font-size: 4rem;
+                letter-spacing: 0.3rem;
             }
             h2{
-                font-size: 100%;
-                letter-spacing: 3px;
+                font-size: 0.8rem;
+                letter-spacing: 0.15rem;
             }
             i{
-                font-size:1000%;
-                text-shadow: 5px 5px $crna;
+                font-size:7rem;
+                text-shadow: 0.3rem 0.3rem $crna;
             }
         }
     }
@@ -217,23 +259,27 @@
 
     .title{
         h3{
-            font-size: 160%;
+            font-size: 2rem;
         }
     }
     #skills{
         #icon-holder{
-            
             .one-icon{
-                padding:2% 3%;
+                padding: 0.5rem;
                 i{
-                    font-size: 600%;
+                    font-size: 5rem;
                 }
                 p{
-                    font-size: 100%;
+                    font-size: 0.6rem;
+                }
+                span{
+                    font-size: 0.6rem;
+                }
+                progress{
+                    height: 8px;
                 }
             }
         }
-       
     }
 
 
@@ -242,9 +288,13 @@
     }
     #projects{
         #projects-holder{
-            img{
-                width: 17rem;       
+            .one-project{
+                img{
+                    width:200px; 
+                    height: 100px;    
+                }
             }
+            
         }
     }
 
@@ -266,6 +316,34 @@
         }
     }
 
+    #contact{
+        #contact-holder{
+            #form{
+                width: 10rem;
+                form{
+                    input[type=text],input[type=password],input[type=email], textarea,button{
+                        padding:0.35rem;
+                        font-size: 0.7rem;
+                    }
+                    input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder, textarea::placeholder{
+                        padding:0.35rem;
+                        font-size: 0.7rem;
+                    }
+                    textarea{
+                        line-height: 0.8rem;
+                    }
+                    button{
+                        font-size: 0.7rem;
+                        padding:0.25rem;
+                    }
+                }
+            }
+        }
+        iframe{
+            width: 23rem;
+            height: 23rem;
+        }
+    }
 
     footer{
         i{
@@ -284,28 +362,28 @@
         height: 320px;
 
         nav ul li{
-            padding-right:30px;
-            font-size: 80%;
+            padding-right:2.5rem;
+            font-size: 0.5rem;
         }
 
         #logo img{
-            width: 100px;
-            height: 30px;
+            width: 6.5rem;
+            height: 2rem;
         }
     
 
         #heading-text{
             h1{
-                font-size: 270%;
-                letter-spacing: 6px;
+                font-size: 3rem;
+                letter-spacing: 0.2rem;
             }
             h2{
-                font-size: 80%;
-                letter-spacing: 2.5px;
+                font-size: 0.6rem;
+                letter-spacing: 0.1rem;
             }
             i{
-                font-size:750%;
-                text-shadow: 3.5px 3.5px $crna;
+                font-size:6rem;
+                text-shadow: 0.2rem 0.2rem $crna;
             }
         }
     }
@@ -313,22 +391,27 @@
 
     .title{
         h3{
-            font-size: 130%;
+            font-size: 1.2rem;
         }
     }
     #skills{
         #icon-holder{
             .one-icon{
-                padding:2%;
+                padding: 0.4rem;
                 i{
-                    font-size: 400%;
+                    font-size: 3.5rem;
                 }
                 p{
-                    font-size: 80%;
+                    font-size: 0.35rem;
+                }
+                span{
+                    font-size: 0.4rem;
+                }
+                progress{
+                    height: 6px;
                 }
             }
         }
-       
     }
 
 
@@ -337,9 +420,14 @@
     }
     #projects{
         #projects-holder{
-            img{
-                width: 12.5rem;       
+            .one-project{
+                padding: 2rem 0.7rem;
+                img{
+                    width:150px; 
+                    height: 80px;     
+                }
             }
+            
         }
     }
 
@@ -361,6 +449,36 @@
         }
     }
 
+#contact{
+        #contact-holder{
+            flex-direction: column;
+            #form{
+                width: 20rem;
+                margin-bottom: 4rem;
+                form{
+                    input[type=text],input[type=password],input[type=email], textarea,button{
+                        padding:0.55rem;
+                        font-size: 1rem;
+                    }
+                    input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder, textarea::placeholder{
+                        padding:0.55rem;
+                        font-size: 1rem;
+                    }
+                    textarea{
+                        line-height: 1.1rem;
+                    }
+                    button{
+                        font-size: 1rem;
+                        padding:0.45rem;
+                    }
+                }
+            }
+        }
+        iframe{
+            width: 23rem;
+            height: 23rem;
+        }
+    }
 
     footer{
         i{
@@ -380,7 +498,7 @@
         height: 280px;
 
         #logo{
-            display: none;
+            padding:0.5rem;
         }
         header div{
             flex-direction: column;
@@ -390,13 +508,13 @@
             padding-bottom:10px;
         }
         nav ul li{
-            padding-right:20px;
-            font-size: 60%;
+            padding-right:2.5rem;
+            font-size: 0.7rem;
         }
 
         #logo img{
-            width: 90px;
-            height: 20px;
+            width: 5.5rem;
+            height: 1.1rem;
         }
     
 
@@ -416,9 +534,9 @@
                 letter-spacing: 2px;
             }
             i{
-                font-size:450%;
-                text-shadow: 2px 2px $crna;
-                padding-top:40%;
+                font-size:5rem;
+                text-shadow: 0.1rem 0.1rem $crna;
+               /* padding-top:40%;*/
             }
         }
     }
@@ -426,20 +544,26 @@
     .title{
         margin:4% auto;
         h3{
-            font-size: 115%;
+            font-size: 1.5rem;
         }
     }
     #skills{
         #icon-holder{
             flex-direction: column;
             .one-icon{
-                width: 65%;
+                width: 75%;
                 padding:5% 0%;
                 i{
-                    font-size: 500%;
+                    font-size: 6rem;
                 }
                 p{
-                    font-size: 50%;
+                    font-size: 0.75rem;
+                }
+                span{
+                    font-size: 0.75rem;
+                }
+                progress{
+                    height: 10px;
                 }
             }
         }
@@ -448,13 +572,20 @@
 
 
     figcaption{
-        font-size:0.7rem ;
+        font-size:1rem ;
     }
     #projects{
         #projects-holder{
-            img{
-                width: 14rem;       
+            justify-content: center;
+            .one-project{
+                
+                //padding: 2rem 0.7rem;
+                img{
+                    width:220px; 
+                    height: 120px;      
+                }
             }
+            
         }
     }
 
@@ -479,6 +610,38 @@
             }
         }
     }
+
+    #contact{
+        #contact-holder{
+            flex-direction: column;
+            #form{
+                width: 15rem;
+                margin-bottom: 2.5rem;
+                form{
+                    input[type=text],input[type=password],input[type=email], textarea,button{
+                        padding:0.35rem;
+                        font-size: 0.75rem;
+                    }
+                    input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder, textarea::placeholder{
+                        padding:0.35rem;
+                        font-size: 0.75rem;
+                    }
+                    textarea{
+                        line-height: 0.8rem;
+                    }
+                    button{
+                        font-size: 0.70rem;
+                        padding:0.25rem;
+                    }
+                }
+            }
+        }
+        iframe{
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+
     footer{
         i{
             padding:10px 25px;
