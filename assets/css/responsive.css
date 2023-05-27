@@ -1,654 +1,832 @@
-@import "style.scss";
-
-@media screen and (min-width: 1440px){
-    #background{
-        height: 900px;
-
-        nav ul li{
-            padding-right:4rem;
-            font-size: 1.5rem;
-        }
-
-        #logo img{
-            width: 12.5rem;
-            height: 8.1rem;
-        }
-    
-        #heading-text{
-            h1{
-                font-size: 7rem;
-                letter-spacing: 0.85rem;
-            }
-            h2{
-                font-size: 2rem;
-                letter-spacing: 0.7rem;
-            }
-            i{
-                font-size:9rem;
-                text-shadow: 0.35rem 0.35rem $crna;
-            }
-        }
-    }
-
-    .title{
-        h3{
-            font-size: 3.3rem;
-        }
-    }
-    #skills{
-        #icon-holder{
-            .one-icon{
-                i{
-                    font-size: 8rem;
-                }
-                p{
-                    font-size: 1.3rem;
-                }
-                span{
-                    font-size: 1.5rem;
-                }
-                progress{
-                    height: 14px;
-                }
-            }
-        }
-       
-    }
-   
-    figcaption{
-        font-size:2rem ;
-    }
-    #projects{
-        #projects-holder{
-            .one-project{
-               img{
-                width:600px; 
-                height: 350px;      //SVE PREBACITI U REM
-            }
-            }  
-        }
-           
-    }
-
-    #author{
-        #author-holder{
-            #info{
-                div{
-                    p,h4{
-                        font-size: 2.5rem;
-                    }
-                }
-            }
-            #pic{
-                img{
-                    width:32.5rem;
-                }
-            }
-        }
-    }
-
-    #contact{
-        #contact-holder{
-            #form{
-                width: 25rem;
-            }
-        }
-        iframe{
-            width: 35rem;
-            height: 35rem;
-        }
-    }
-
-    footer{
-        i{
-            font-size: 2.0rem;
-        }
-        p{
-            font-size: 1.9rem;
-        }
-    }
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-@media screen and (max-width: 1024px){
-    #background{
-        height: 600px;
-
-        nav ul li{
-            padding-right:3.3rem;
-            font-size: 1.0rem;
-        }
-
-        #logo img{
-            width: 9rem;
-            height: 4.5rem;
-        }
-    
-
-        #heading-text{
-            h1{
-                font-size: 4.5rem;
-                letter-spacing: 0.5rem;
-            }
-            h2{
-                font-size: 1.0rem;
-                letter-spacing: 0.3rem;
-            }
-            i{
-                font-size:8rem;
-                /*text-shadow: 5px 5px $crna;*/
-            }
-        }
-    }
-
-
-    .title{
-        h3{
-            font-size: 2.5rem;
-        }
-    }
-    #skills{
-        #icon-holder{
-            .one-icon{
-                i{
-                    font-size: 5.5rem;
-                }
-                p{
-                    font-size: 0.8rem;
-                }
-                span{
-                    font-size: 0.8rem;
-                }
-                progress{
-                    height: 10px;
-                }
-            }
-        }
-       
-    }
-    
-
-
-    figcaption{
-        font-size:1.3rem ;
-    }
-    #projects{
-        #projects-holder{
-            .one-project{
-                padding: 2rem 0.7rem;
-                img{
-                    width:300px; 
-                    height: 150px;      
-                }
-            }
-            
-        }
-    }
-
-
-    #author{
-        #author-holder{
-            #info{
-                div{
-                    p,h4{
-                        font-size: 1.5rem;
-                    }
-                }
-            }
-            #pic{
-                img{
-                    width:22.5rem;
-                }
-            }
-        }
-    }
-
-    #contact{
-        #contact-holder{
-            #form{
-                width: 15rem;
-            }
-        }
-        iframe{
-            width: 25rem;
-            height: 25rem;
-        }
-    }
-
-    footer{
-        i{
-            font-size: 1.5rem;
-        }
-        p{
-            font-size: 1.4rem;
-        }
-    }
+body {
+  font-family: "Exo 2", sans-serif;
 }
 
-
-@media screen and (max-width: 768px){
-    #background{
-        height: 400px;
-
-        nav ul li{
-            padding-right:3.0rem;
-            font-size: 0.7rem;
-        }
-
-        #logo img{
-            width: 8rem;
-            height: 3.5rem;
-        }
-    
-
-        #heading-text{
-            h1{
-                font-size: 4rem;
-                letter-spacing: 0.3rem;
-            }
-            h2{
-                font-size: 0.8rem;
-                letter-spacing: 0.15rem;
-            }
-            i{
-                font-size:7rem;
-                text-shadow: 0.3rem 0.3rem $crna;
-            }
-        }
-    }
-
-
-    .title{
-        h3{
-            font-size: 2rem;
-        }
-    }
-    #skills{
-        #icon-holder{
-            .one-icon{
-                padding: 0.5rem;
-                i{
-                    font-size: 5rem;
-                }
-                p{
-                    font-size: 0.6rem;
-                }
-                span{
-                    font-size: 0.6rem;
-                }
-                progress{
-                    height: 8px;
-                }
-            }
-        }
-    }
-
-
-    figcaption{
-        font-size:1.0rem ;
-    }
-    #projects{
-        #projects-holder{
-            .one-project{
-                img{
-                    width:200px; 
-                    height: 100px;    
-                }
-            }
-            
-        }
-    }
-
-
-    #author{
-        #author-holder{
-            #info{
-                div{
-                    p,h4{
-                        font-size: 1.2rem;
-                    }
-                }
-            }
-            #pic{
-                img{
-                    width:16rem;
-                }
-            }
-        }
-    }
-
-    #contact{
-        #contact-holder{
-            #form{
-                width: 10rem;
-                form{
-                    input[type=text],input[type=password],input[type=email], textarea,button{
-                        padding:0.35rem;
-                        font-size: 0.7rem;
-                    }
-                    input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder, textarea::placeholder{
-                        padding:0.35rem;
-                        font-size: 0.7rem;
-                    }
-                    textarea{
-                        line-height: 0.8rem;
-                    }
-                    button{
-                        font-size: 0.7rem;
-                        padding:0.25rem;
-                    }
-                }
-            }
-        }
-        iframe{
-            width: 23rem;
-            height: 23rem;
-        }
-    }
-
-    footer{
-        i{
-            font-size: 1.3rem;
-        }
-        p{
-            font-size: 1.1rem;
-        }
-    }
+html {
+  scroll-behavior: smooth;
 }
 
-
-
-@media screen and (max-width: 576px){
-    #background{
-        height: 320px;
-
-        nav ul li{
-            padding-right:2.5rem;
-            font-size: 0.5rem;
-        }
-
-        #logo img{
-            width: 6.5rem;
-            height: 2rem;
-        }
-    
-
-        #heading-text{
-            h1{
-                font-size: 3rem;
-                letter-spacing: 0.2rem;
-            }
-            h2{
-                font-size: 0.6rem;
-                letter-spacing: 0.1rem;
-            }
-            i{
-                font-size:6rem;
-                text-shadow: 0.2rem 0.2rem $crna;
-            }
-        }
-    }
-
-
-    .title{
-        h3{
-            font-size: 1.2rem;
-        }
-    }
-    #skills{
-        #icon-holder{
-            .one-icon{
-                padding: 0.4rem;
-                i{
-                    font-size: 3.5rem;
-                }
-                p{
-                    font-size: 0.35rem;
-                }
-                span{
-                    font-size: 0.4rem;
-                }
-                progress{
-                    height: 6px;
-                }
-            }
-        }
-    }
-
-
-    figcaption{
-        font-size:0.6rem ;
-    }
-    #projects{
-        #projects-holder{
-            .one-project{
-                padding: 2rem 0.7rem;
-                img{
-                    width:150px; 
-                    height: 80px;     
-                }
-            }
-            
-        }
-    }
-
-
-    #author{
-        #author-holder{
-            #info{
-                div{
-                    p,h4{
-                        font-size: 0.8rem;
-                    }
-                }
-            }
-            #pic{
-                img{
-                    width:11.5rem;
-                }
-            }
-        }
-    }
-
-#contact{
-        #contact-holder{
-            flex-direction: column;
-            #form{
-                width: 20rem;
-                margin-bottom: 4rem;
-                form{
-                    input[type=text],input[type=password],input[type=email], textarea,button{
-                        padding:0.55rem;
-                        font-size: 1rem;
-                    }
-                    input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder, textarea::placeholder{
-                        padding:0.55rem;
-                        font-size: 1rem;
-                    }
-                    textarea{
-                        line-height: 1.1rem;
-                    }
-                    button{
-                        font-size: 1rem;
-                        padding:0.45rem;
-                    }
-                }
-            }
-        }
-        iframe{
-            width: 23rem;
-            height: 23rem;
-        }
-    }
-
-    footer{
-        i{
-            font-size: 1.0rem;
-            padding:12.5px 35px;
-        }
-        p{
-            font-size: 0.9rem;
-        }
-    }
+hr {
+  border: 1.5px solid #609c44;
+  width: 95%;
 }
 
+figcaption {
+  padding-top: 2%;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5rem;
+}
 
+a {
+  text-decoration: none;
+}
 
-@media screen and (max-width: 450px){
-    #background{
-        height: 280px;
+.title {
+  margin: 2% auto;
+}
+.title h3 {
+  font-size: 3rem;
+  text-align: center;
+}
 
-        #logo{
-            padding:0.5rem;
-        }
-        header div{
-            flex-direction: column;
-        }
-        nav{
-            padding-top:2px;
-            padding-bottom:10px;
-        }
-        nav ul li{
-            padding-right:2.5rem;
-            font-size: 0.7rem;
-        }
+#background {
+  background-image: url("..//images/background222.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+#background header {
+  background-color: #000;
+  color: #FFF;
+}
+#background .centering {
+  margin: auto 5%;
+}
+#background .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#background nav ul {
+  list-style-type: none;
+}
+#background nav ul li {
+  display: inline;
+  padding-right: 3.75rem;
+  font-size: 1rem;
+}
+#background nav ul li a {
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+  color: #FFF;
+}
+#background nav ul li a:hover {
+  color: #609c44;
+  text-decoration: underline;
+}
+#background nav ul li:last-child {
+  padding-right: 0px;
+}
+#background #logo img {
+  width: 10rem;
+  height: 5.6rem;
+}
+#background #heading-text {
+  margin: 5%;
+  /*display: flex;
+  flex-direction: column;
+  text-align: center;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#background #heading-text h1, #background #heading-text h2 {
+  text-transform: uppercase;
+  color: #FFF;
+  /* background-color: $crna;*/
+  font-weight: bold;
+}
+#background #heading-text h1 {
+  font-size: 6.5rem;
+  letter-spacing: 0.7rem;
+  word-spacing: 0.5rem;
+  text-shadow: 0.45rem 0.45rem #000;
+}
+#background #heading-text h2 {
+  padding-top: 3%;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: lowercase;
+  text-shadow: 0.25rem 0.25rem #000;
+}
+#background #heading-text i {
+  font-size: 8.5rem;
+  color: #FFF;
+  text-shadow: 0.2rem 0.2rem #000;
+  padding-top: 45%;
+  animation-name: animacija;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
 
-        #logo img{
-            width: 5.5rem;
-            height: 1.1rem;
-        }
-    
+@keyframes animacija {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*#skills{
+    @include flex-block();
+    background-color: $crna;
+    color: $bela;
+    text-align: center;
 
-        #heading-text{
-            margin:7%;
-            h1,h2{
-                padding-bottom:3.5%;
-            }
-            h1{
-                font-size: 120%;
-                letter-spacing: 4px;
-                //word-wrap: break-word; //NE RADI!!!
-                display: inline-block; //NI OVO NE RADI!!!
-            }
-            h2{
-                font-size: 20%;
-                letter-spacing: 2px;
+    .centering .title h3{
+        font-size: 250%;
+        padding-top:35px;
+        padding-bottom:35px;
+    }
+
+    #icons{
+        @include flex-block();
+        justify-content: center;
+        .icon-holder{
+            margin:2% 4%;
+            background-color: $siva;
+            width: 15%;
+
+            i,p{
+                padding:10px;
             }
             i{
-                font-size:5rem;
-                text-shadow: 0.1rem 0.1rem $crna;
-               /* padding-top:40%;*/
+                font-size: 900%;
+                transition: 0.5s ease-in-out;
             }
-        }
-    }
-
-    .title{
-        margin:4% auto;
-        h3{
-            font-size: 1.5rem;
-        }
-    }
-    #skills{
-        #icon-holder{
-            flex-direction: column;
-            .one-icon{
-                width: 75%;
-                padding:5% 0%;
-                i{
-                    font-size: 6rem;
-                }
-                p{
-                    font-size: 0.75rem;
-                }
-                span{
-                    font-size: 0.75rem;
-                }
-                progress{
-                    height: 10px;
-                }
+            i:hover{
+                transform: scale(1.25); 
             }
-        }
-       
-    }
-
-
-    figcaption{
-        font-size:1rem ;
-    }
-    #projects{
-        #projects-holder{
-            justify-content: center;
-            .one-project{
-                
-                //padding: 2rem 0.7rem;
-                img{
-                    width:220px; 
-                    height: 120px;      
-                }
+            p{
+                text-align: justify;
             }
-            
+
         }
     }
 
-
-    #author{
-        #author-holder{
-            flex-direction: column;
-            #info{
-                order:2;
-                padding-top:5%;
-                div{
-                    p,h4{
-                        font-size: 1.0rem;
-                    }
-                }
-            }
-            #pic{
-                img{
-                    width:12.5rem;
-                    order:1;
-                }
-            }
-        }
-    }
-
-    #contact{
-        #contact-holder{
-            flex-direction: column;
-            #form{
-                width: 15rem;
-                margin-bottom: 2.5rem;
-                form{
-                    input[type=text],input[type=password],input[type=email], textarea,button{
-                        padding:0.35rem;
-                        font-size: 0.75rem;
-                    }
-                    input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder, textarea::placeholder{
-                        padding:0.35rem;
-                        font-size: 0.75rem;
-                    }
-                    textarea{
-                        line-height: 0.8rem;
-                    }
-                    button{
-                        font-size: 0.70rem;
-                        padding:0.25rem;
-                    }
-                }
-            }
-        }
-        iframe{
-            width: 15rem;
-            height: 15rem;
-        }
-    }
-
-    footer{
-        i{
-            padding:10px 25px;
-            font-size: 0.85rem;
-        }
-        p{
-            font-size: 0.75rem;
-        }
-    }
+}*/
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  color: #FFF;
 }
+
+span {
+  color: #609c44;
+  text-align: right;
+  font-weight: bold;
+  font-family: "Exo 2", sans-serif;
+  padding-top: 0.75rem;
+}
+
+#skills #icon-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+  margin-top: 0%;
+}
+#skills #icon-holder .one-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  /* width: 15%; KADA SE STAVI SIRINA OVDE GUBI SE RESPONSIVE SVOJSTVO, PITATI!!! SVE VREME JE GRESKA BILA OVDE*/
+  width: 25%;
+}
+#skills #icon-holder .one-icon i {
+  font-size: 6rem;
+  transition: transform 0.5s;
+}
+#skills #icon-holder .one-icon i:hover {
+  transform: scale(1.2);
+  color: #609c44;
+}
+#skills #icon-holder .one-icon p {
+  font-size: 1rem;
+  color: #609c44;
+  font-weight: bold;
+  text-align: justify;
+  padding: 1rem;
+}
+#skills #icon-holder .one-icon progress {
+  /* postavlja stil za vrijednost progress elementa */
+  background-color: #609c44;
+  height: 12px;
+  width: 90%;
+}
+#skills #icon-holder .one-icon progress[value]::-webkit-progress-bar {
+  background-color: #FFF;
+}
+
+#projects #projects-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5%;
+  margin-top: 2.5%;
+}
+#projects #projects-holder .one-project {
+  padding: 2.5rem 1.5rem;
+}
+#projects #projects-holder .one-project img {
+  transition: 0.5s ease-in-out;
+  /* width: 500px;
+   height: 250px;*/
+}
+#projects #projects-holder .one-project img:hover {
+  transform: scale(1.05);
+  box-shadow: 0.3rem 0.3rem 1.25rem #609c44;
+}
+
+#author #author-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 5% auto;
+}
+#author #author-holder #info div {
+  margin: 10% auto;
+}
+#author #author-holder #info div p, #author #author-holder #info div h4 {
+  font-size: 2.1rem;
+}
+#author #author-holder #info div p {
+  color: #609c44;
+}
+#author #author-holder #pic img {
+  width: 25rem;
+  transition: 0.5s ease-in-out;
+}
+#author #author-holder #pic img:hover {
+  transform: scale(1.05);
+  box-shadow: 0.125rem 0.125rem 0.6rem #609c44;
+}
+
+#contact {
+  margin: 2% auto;
+  flex-direction: column;
+  width: 90%;
+}
+#contact #contact-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around !important;
+  flex-direction: row;
+  margin: 4rem auto;
+}
+#contact #contact-holder #form {
+  width: 20rem;
+}
+#contact #contact-holder #form form {
+  width: 100%;
+}
+#contact #contact-holder #form form input[type=text], #contact #contact-holder #form form input[type=password], #contact #contact-holder #form form input[type=email], #contact #contact-holder #form form textarea, #contact #contact-holder #form form button {
+  width: 95%;
+  padding: 0.65rem;
+  margin: 1rem auto;
+  color: #609c44;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Exo 2", sans-serif;
+}
+#contact #contact-holder #form form input[type=text]::-moz-placeholder, #contact #contact-holder #form form input[type=password]::-moz-placeholder, #contact #contact-holder #form form input[type=email]::-moz-placeholder, #contact #contact-holder #form form textarea::-moz-placeholder {
+  color: #609c44;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Exo 2", sans-serif;
+}
+#contact #contact-holder #form form input[type=text]::placeholder, #contact #contact-holder #form form input[type=password]::placeholder, #contact #contact-holder #form form input[type=email]::placeholder, #contact #contact-holder #form form textarea::placeholder {
+  color: #609c44;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Exo 2", sans-serif;
+}
+#contact #contact-holder #form form textarea {
+  max-width: 25rem;
+  line-height: 1.5rem;
+}
+#contact #contact-holder #form form #submit {
+  width: 100%;
+  text-align: center;
+}
+#contact #contact-holder #form form #submit button {
+  width: 35%;
+  color: #000;
+}
+#contact iframe {
+  width: 30rem;
+  height: 30rem;
+}
+
+#services #service-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 5%;
+  margin-top: 0%;
+}
+#services #service-holder .one-service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #609c44;
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+footer i {
+  padding: 0.9rem 3.4rem;
+  font-size: 1.7rem;
+}
+footer p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+footer a {
+  color: #000;
+  transition: 0.5s ease-in-out;
+}
+footer a:hover {
+  color: #FFF;
+}
+
+@media screen and (min-width: 1440px) {
+  #background {
+    height: 900px;
+  }
+  #background nav ul li {
+    padding-right: 4rem;
+    font-size: 1.5rem;
+  }
+  #background #logo img {
+    width: 12.5rem;
+    height: 8.1rem;
+  }
+  #background #heading-text h1 {
+    font-size: 7rem;
+    letter-spacing: 0.85rem;
+  }
+  #background #heading-text h2 {
+    font-size: 2rem;
+    letter-spacing: 0.7rem;
+  }
+  #background #heading-text i {
+    font-size: 9rem;
+    text-shadow: 0.35rem 0.35rem #000;
+  }
+  .title h3 {
+    font-size: 3.3rem;
+  }
+  #skills #icon-holder .one-icon i {
+    font-size: 8rem;
+  }
+  #skills #icon-holder .one-icon p {
+    font-size: 1.3rem;
+  }
+  #skills #icon-holder .one-icon span {
+    font-size: 1.5rem;
+  }
+  #skills #icon-holder .one-icon progress {
+    height: 14px;
+  }
+  figcaption {
+    font-size: 2rem;
+  }
+  #projects #projects-holder .one-project img {
+    width: 600px;
+    height: 350px;
+  }
+  #author #author-holder #info div p, #author #author-holder #info div h4 {
+    font-size: 2.5rem;
+  }
+  #author #author-holder #pic img {
+    width: 32.5rem;
+  }
+  #contact #contact-holder #form {
+    width: 25rem;
+  }
+  #contact iframe {
+    width: 35rem;
+    height: 35rem;
+  }
+  footer i {
+    font-size: 2rem;
+  }
+  footer p {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #background {
+    height: 600px;
+  }
+  #background nav ul li {
+    padding-right: 3.3rem;
+    font-size: 1rem;
+  }
+  #background #logo img {
+    width: 9rem;
+    height: 4.5rem;
+  }
+  #background #heading-text h1 {
+    font-size: 4.5rem;
+    letter-spacing: 0.5rem;
+  }
+  #background #heading-text h2 {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+  }
+  #background #heading-text i {
+    font-size: 8rem;
+    /*text-shadow: 5px 5px $crna;*/
+  }
+  .title h3 {
+    font-size: 2.5rem;
+  }
+  #skills #icon-holder .one-icon i {
+    font-size: 5.5rem;
+  }
+  #skills #icon-holder .one-icon p {
+    font-size: 0.8rem;
+  }
+  #skills #icon-holder .one-icon span {
+    font-size: 0.8rem;
+  }
+  #skills #icon-holder .one-icon progress {
+    height: 10px;
+  }
+  figcaption {
+    font-size: 1.3rem;
+  }
+  #projects #projects-holder .one-project {
+    padding: 2rem 0.7rem;
+  }
+  #projects #projects-holder .one-project img {
+    width: 300px;
+    height: 150px;
+  }
+  #author #author-holder #info div p, #author #author-holder #info div h4 {
+    font-size: 1.5rem;
+  }
+  #author #author-holder #pic img {
+    width: 22.5rem;
+  }
+  #contact #contact-holder #form {
+    width: 15rem;
+  }
+  #contact iframe {
+    width: 25rem;
+    height: 25rem;
+  }
+  footer i {
+    font-size: 1.5rem;
+  }
+  footer p {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #background {
+    height: 400px;
+  }
+  #background nav ul li {
+    padding-right: 3rem;
+    font-size: 0.7rem;
+  }
+  #background #logo img {
+    width: 8rem;
+    height: 3.5rem;
+  }
+  #background #heading-text h1 {
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+  }
+  #background #heading-text h2 {
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+  }
+  #background #heading-text i {
+    font-size: 7rem;
+    text-shadow: 0.3rem 0.3rem #000;
+  }
+  .title h3 {
+    font-size: 2rem;
+  }
+  #skills #icon-holder .one-icon {
+    padding: 0.5rem;
+  }
+  #skills #icon-holder .one-icon i {
+    font-size: 5rem;
+  }
+  #skills #icon-holder .one-icon p {
+    font-size: 0.6rem;
+  }
+  #skills #icon-holder .one-icon span {
+    font-size: 0.6rem;
+  }
+  #skills #icon-holder .one-icon progress {
+    height: 8px;
+  }
+  figcaption {
+    font-size: 1rem;
+  }
+  #projects #projects-holder .one-project img {
+    width: 200px;
+    height: 100px;
+  }
+  #author #author-holder #info div p, #author #author-holder #info div h4 {
+    font-size: 1.2rem;
+  }
+  #author #author-holder #pic img {
+    width: 16rem;
+  }
+  #contact #contact-holder #form {
+    width: 10rem;
+  }
+  #contact #contact-holder #form form input[type=text], #contact #contact-holder #form form input[type=password], #contact #contact-holder #form form input[type=email], #contact #contact-holder #form form textarea, #contact #contact-holder #form form button {
+    padding: 0.35rem;
+    font-size: 0.7rem;
+  }
+  #contact #contact-holder #form form input[type=text]::-moz-placeholder, #contact #contact-holder #form form input[type=password]::-moz-placeholder, #contact #contact-holder #form form input[type=email]::-moz-placeholder, #contact #contact-holder #form form textarea::-moz-placeholder {
+    padding: 0.35rem;
+    font-size: 0.7rem;
+  }
+  #contact #contact-holder #form form input[type=text]::placeholder, #contact #contact-holder #form form input[type=password]::placeholder, #contact #contact-holder #form form input[type=email]::placeholder, #contact #contact-holder #form form textarea::placeholder {
+    padding: 0.35rem;
+    font-size: 0.7rem;
+  }
+  #contact #contact-holder #form form textarea {
+    line-height: 0.8rem;
+  }
+  #contact #contact-holder #form form button {
+    font-size: 0.7rem;
+    padding: 0.25rem;
+  }
+  #contact iframe {
+    width: 23rem;
+    height: 23rem;
+  }
+  footer i {
+    font-size: 1.3rem;
+  }
+  footer p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  #background {
+    height: 320px;
+  }
+  #background nav ul li {
+    padding-right: 2.5rem;
+    font-size: 0.5rem;
+  }
+  #background #logo img {
+    width: 6.5rem;
+    height: 2rem;
+  }
+  #background #heading-text h1 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+  }
+  #background #heading-text h2 {
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+  }
+  #background #heading-text i {
+    font-size: 6rem;
+    text-shadow: 0.2rem 0.2rem #000;
+  }
+  .title h3 {
+    font-size: 1.2rem;
+  }
+  #skills #icon-holder .one-icon {
+    padding: 0.4rem;
+  }
+  #skills #icon-holder .one-icon i {
+    font-size: 3.5rem;
+  }
+  #skills #icon-holder .one-icon p {
+    font-size: 0.35rem;
+  }
+  #skills #icon-holder .one-icon span {
+    font-size: 0.4rem;
+  }
+  #skills #icon-holder .one-icon progress {
+    height: 6px;
+  }
+  figcaption {
+    font-size: 0.6rem;
+  }
+  #projects #projects-holder .one-project {
+    padding: 2rem 0.7rem;
+  }
+  #projects #projects-holder .one-project img {
+    width: 150px;
+    height: 80px;
+  }
+  #author #author-holder #info div p, #author #author-holder #info div h4 {
+    font-size: 0.8rem;
+  }
+  #author #author-holder #pic img {
+    width: 11.5rem;
+  }
+  #contact #contact-holder {
+    flex-direction: column;
+  }
+  #contact #contact-holder #form {
+    width: 20rem;
+    margin-bottom: 4rem;
+  }
+  #contact #contact-holder #form form input[type=text], #contact #contact-holder #form form input[type=password], #contact #contact-holder #form form input[type=email], #contact #contact-holder #form form textarea, #contact #contact-holder #form form button {
+    padding: 0.55rem;
+    font-size: 1rem;
+  }
+  #contact #contact-holder #form form input[type=text]::-moz-placeholder, #contact #contact-holder #form form input[type=password]::-moz-placeholder, #contact #contact-holder #form form input[type=email]::-moz-placeholder, #contact #contact-holder #form form textarea::-moz-placeholder {
+    padding: 0.55rem;
+    font-size: 1rem;
+  }
+  #contact #contact-holder #form form input[type=text]::placeholder, #contact #contact-holder #form form input[type=password]::placeholder, #contact #contact-holder #form form input[type=email]::placeholder, #contact #contact-holder #form form textarea::placeholder {
+    padding: 0.55rem;
+    font-size: 1rem;
+  }
+  #contact #contact-holder #form form textarea {
+    line-height: 1.1rem;
+  }
+  #contact #contact-holder #form form button {
+    font-size: 1rem;
+    padding: 0.45rem;
+  }
+  #contact iframe {
+    width: 23rem;
+    height: 23rem;
+  }
+  footer i {
+    font-size: 1rem;
+    padding: 12.5px 35px;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  #background {
+    height: 280px;
+  }
+  #background #logo {
+    padding: 0.5rem;
+  }
+  #background header div {
+    flex-direction: column;
+  }
+  #background nav {
+    padding-top: 2px;
+    padding-bottom: 10px;
+  }
+  #background nav ul li {
+    padding-right: 2.5rem;
+    font-size: 0.7rem;
+  }
+  #background #logo img {
+    width: 5.5rem;
+    height: 1.1rem;
+  }
+  #background #heading-text {
+    margin: 7%;
+  }
+  #background #heading-text h1, #background #heading-text h2 {
+    padding-bottom: 3.5%;
+  }
+  #background #heading-text h1 {
+    font-size: 120%;
+    letter-spacing: 4px;
+    display: inline-block;
+  }
+  #background #heading-text h2 {
+    font-size: 20%;
+    letter-spacing: 2px;
+  }
+  #background #heading-text i {
+    font-size: 5rem;
+    text-shadow: 0.1rem 0.1rem #000;
+    /* padding-top:40%;*/
+  }
+  .title {
+    margin: 4% auto;
+  }
+  .title h3 {
+    font-size: 1.5rem;
+  }
+  #skills #icon-holder {
+    flex-direction: column;
+  }
+  #skills #icon-holder .one-icon {
+    width: 75%;
+    padding: 5% 0%;
+  }
+  #skills #icon-holder .one-icon i {
+    font-size: 6rem;
+  }
+  #skills #icon-holder .one-icon p {
+    font-size: 0.75rem;
+  }
+  #skills #icon-holder .one-icon span {
+    font-size: 0.75rem;
+  }
+  #skills #icon-holder .one-icon progress {
+    height: 10px;
+  }
+  figcaption {
+    font-size: 1rem;
+  }
+  #projects #projects-holder {
+    justify-content: center;
+  }
+  #projects #projects-holder .one-project img {
+    width: 220px;
+    height: 120px;
+  }
+  #author #author-holder {
+    flex-direction: column;
+  }
+  #author #author-holder #info {
+    order: 2;
+    padding-top: 5%;
+  }
+  #author #author-holder #info div p, #author #author-holder #info div h4 {
+    font-size: 1rem;
+  }
+  #author #author-holder #pic img {
+    width: 12.5rem;
+    order: 1;
+  }
+  #contact #contact-holder {
+    flex-direction: column;
+  }
+  #contact #contact-holder #form {
+    width: 15rem;
+    margin-bottom: 2.5rem;
+  }
+  #contact #contact-holder #form form input[type=text], #contact #contact-holder #form form input[type=password], #contact #contact-holder #form form input[type=email], #contact #contact-holder #form form textarea, #contact #contact-holder #form form button {
+    padding: 0.35rem;
+    font-size: 0.75rem;
+  }
+  #contact #contact-holder #form form input[type=text]::-moz-placeholder, #contact #contact-holder #form form input[type=password]::-moz-placeholder, #contact #contact-holder #form form input[type=email]::-moz-placeholder, #contact #contact-holder #form form textarea::-moz-placeholder {
+    padding: 0.35rem;
+    font-size: 0.75rem;
+  }
+  #contact #contact-holder #form form input[type=text]::placeholder, #contact #contact-holder #form form input[type=password]::placeholder, #contact #contact-holder #form form input[type=email]::placeholder, #contact #contact-holder #form form textarea::placeholder {
+    padding: 0.35rem;
+    font-size: 0.75rem;
+  }
+  #contact #contact-holder #form form textarea {
+    line-height: 0.8rem;
+  }
+  #contact #contact-holder #form form button {
+    font-size: 0.7rem;
+    padding: 0.25rem;
+  }
+  #contact iframe {
+    width: 15rem;
+    height: 15rem;
+  }
+  footer i {
+    padding: 10px 25px;
+    font-size: 0.85rem;
+  }
+  footer p {
+    font-size: 0.75rem;
+  }
+}/*# sourceMappingURL=responsive.css.map */
