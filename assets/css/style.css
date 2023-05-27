@@ -61,8 +61,8 @@ a {
 }
 #background nav ul li {
   display: inline;
-  padding-right: 3.75rem;
-  font-size: 1rem;
+  padding-right: 3rem;
+  font-size: 1.5rem;
 }
 #background nav ul li a {
   transition: 0.5s ease-in-out;
