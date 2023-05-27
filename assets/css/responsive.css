@@ -61,8 +61,8 @@ a {
 }
 #background nav ul li {
   display: inline;
-  padding-right: 3.75rem;
-  font-size: 1rem;
+  padding-right: 3rem;
+  font-size: 1.5rem;
 }
 #background nav ul li a {
   transition: 0.5s ease-in-out;
@@ -338,25 +338,6 @@ span {
   height: 30rem;
 }
 
-#services #service-holder {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin: 5%;
-  margin-top: 0%;
-}
-#services #service-holder .one-service {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  padding: 2rem;
-  text-align: center;
-}
-
 footer {
   width: 100%;
   background-color: #609c44;
@@ -388,7 +369,7 @@ footer a:hover {
   }
   #background nav ul li {
     padding-right: 4rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   #background #logo img {
     width: 12.5rem;
@@ -522,8 +503,8 @@ footer a:hover {
     height: 400px;
   }
   #background nav ul li {
-    padding-right: 3rem;
-    font-size: 0.7rem;
+    padding-right: 1rem;
+    font-size: 0.8rem;
   }
   #background #logo img {
     width: 8rem;
@@ -610,12 +591,12 @@ footer a:hover {
     height: 320px;
   }
   #background nav ul li {
-    padding-right: 2.5rem;
-    font-size: 0.5rem;
+    padding-right: 0.75rem;
+    font-size: 0.7rem;
   }
   #background #logo img {
     width: 6.5rem;
-    height: 2rem;
+    height: 3rem;
   }
   #background #heading-text h1 {
     font-size: 3rem;
@@ -717,11 +698,11 @@ footer a:hover {
   }
   #background nav ul li {
     padding-right: 2.5rem;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
   #background #logo img {
     width: 5.5rem;
-    height: 1.1rem;
+    height: 2.2rem;
   }
   #background #heading-text {
     margin: 7%;
