@@ -1,574 +1,654 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap");
-* {
-  padding: 0px;
-  margin: 0px;
-}
+@import "style.scss";
 
-body {
-  font-family: "Exo 2", sans-serif;
-}
+@media screen and (min-width: 1440px){
+    #background{
+        height: 900px;
 
-html {
-  scroll-behavior: smooth;
-}
+        nav ul li{
+            padding-right:4rem;
+            font-size: 1.5rem;
+        }
 
-hr {
-  border: 1.5px solid #609c44;
-}
-
-figcaption {
-  padding-top: 2%;
-  text-align: center;
-  font-style: italic;
-  font-size: 140%;
-}
-
-.title {
-  margin: 2% auto;
-}
-.title h3 {
-  font-size: 250%; /*NE RADI*/
-}
-
-#background {
-  background-image: url("..//images/background222.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 700px;
-}
-#background header {
-  background-color: #000;
-  color: #FFF;
-}
-#background .centering {
-  margin: auto 5%;
-}
-#background .flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-#background .flex2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: space-around;
-}
-#background nav ul {
-  list-style-type: none;
-}
-#background nav ul li {
-  display: inline;
-  padding-right: 60px;
-  font-size: 125%;
-  transition: 0.5s ease-in-out;
-}
-#background nav ul li:hover {
-  color: #609c44;
-  text-decoration: underline;
-}
-#background nav ul li:last-child {
-  padding-right: 0px;
-}
-#background #logo img {
-  width: 160px;
-  height: 90px;
-}
-#background #heading-text {
-  margin: 5%;
-  /*display: flex;
-  flex-direction: column;
-  text-align: center;*/
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-#background #heading-text h1, #background #heading-text h2 {
-  text-transform: uppercase;
-  color: #FFF;
-  text-shadow: 7px 7px #000;
-  /* background-color: $crna;*/
-  font-weight: bold;
-}
-#background #heading-text h1 {
-  font-size: 450%;
-  letter-spacing: 15px;
-  word-spacing: 8px;
-}
-#background #heading-text h2 {
-  padding-top: 3%;
-  font-size: 145%;
-  letter-spacing: 5px;
-  text-transform: lowercase;
-  text-shadow: 4px 4px #000;
-}
-#background #heading-text i {
-  font-size: 1500%;
-  color: #FFF;
-  text-shadow: 3px 3px #000;
-  padding-top: 15%;
-  animation-name: animacija;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes animacija {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-/*#skills{
-    @include flex-block();
-    background-color: $crna;
-    color: $bela;
-    text-align: center;
-
-    .centering .title h3{
-        font-size: 250%;
-        padding-top:35px;
-        padding-bottom:35px;
-    }
-
-    #icons{
-        @include flex-block();
-        justify-content: center;
-        .icon-holder{
-            margin:2% 4%;
-            background-color: $siva;
-            width: 15%;
-
-            i,p{
-                padding:10px;
+        #logo img{
+            width: 12.5rem;
+            height: 8.1rem;
+        }
+    
+        #heading-text{
+            h1{
+                font-size: 7rem;
+                letter-spacing: 0.85rem;
+            }
+            h2{
+                font-size: 2rem;
+                letter-spacing: 0.7rem;
             }
             i{
-                font-size: 900%;
-                transition: 0.5s ease-in-out;
+                font-size:9rem;
+                text-shadow: 0.35rem 0.35rem $crna;
             }
-            i:hover{
-                transform: scale(1.25); 
-            }
-            p{
-                text-align: justify;
-            }
-
         }
     }
 
-}*/
-.section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  background-color: #000;
-  color: #FFF;
+    .title{
+        h3{
+            font-size: 3.3rem;
+        }
+    }
+    #skills{
+        #icon-holder{
+            .one-icon{
+                i{
+                    font-size: 8rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+                span{
+                    font-size: 1.5rem;
+                }
+                progress{
+                    height: 14px;
+                }
+            }
+        }
+       
+    }
+   
+    figcaption{
+        font-size:2rem ;
+    }
+    #projects{
+        #projects-holder{
+            .one-project{
+               img{
+                width:600px; 
+                height: 350px;      //SVE PREBACITI U REM
+            }
+            }  
+        }
+           
+    }
+
+    #author{
+        #author-holder{
+            #info{
+                div{
+                    p,h4{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:32.5rem;
+                }
+            }
+        }
+    }
+
+    #contact{
+        #contact-holder{
+            #form{
+                width: 25rem;
+            }
+        }
+        iframe{
+            width: 35rem;
+            height: 35rem;
+        }
+    }
+
+    footer{
+        i{
+            font-size: 2.0rem;
+        }
+        p{
+            font-size: 1.9rem;
+        }
+    }
 }
 
-#skills #icon-holder {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-#skills #icon-holder .one-icon {
-  padding: 2% 4.5%;
-  text-align: center;
-  /* width: 15%; KADA SE STAVI SIRINA OVDE GUBI SE RESPONSIVE SVOJSTVO, PITATI!!! SVE VREME JE GRESKA BILA OVDE*/
-  width: 20%;
-}
-#skills #icon-holder .one-icon i {
-  font-size: 1000%;
-  padding: 2%;
-  transition: transform 0.5s;
-}
-#skills #icon-holder .one-icon i:hover {
-  transform: scale(1.2);
-  color: #609c44;
-}
-#skills #icon-holder .one-icon p {
-  font-size: 120%;
-  color: #609c44;
-  font-weight: bold;
-  text-align: justify;
+@media screen and (max-width: 1024px){
+    #background{
+        height: 600px;
+
+        nav ul li{
+            padding-right:3.3rem;
+            font-size: 1.0rem;
+        }
+
+        #logo img{
+            width: 9rem;
+            height: 4.5rem;
+        }
+    
+
+        #heading-text{
+            h1{
+                font-size: 4.5rem;
+                letter-spacing: 0.5rem;
+            }
+            h2{
+                font-size: 1.0rem;
+                letter-spacing: 0.3rem;
+            }
+            i{
+                font-size:8rem;
+                /*text-shadow: 5px 5px $crna;*/
+            }
+        }
+    }
+
+
+    .title{
+        h3{
+            font-size: 2.5rem;
+        }
+    }
+    #skills{
+        #icon-holder{
+            .one-icon{
+                i{
+                    font-size: 5.5rem;
+                }
+                p{
+                    font-size: 0.8rem;
+                }
+                span{
+                    font-size: 0.8rem;
+                }
+                progress{
+                    height: 10px;
+                }
+            }
+        }
+       
+    }
+    
+
+
+    figcaption{
+        font-size:1.3rem ;
+    }
+    #projects{
+        #projects-holder{
+            .one-project{
+                padding: 2rem 0.7rem;
+                img{
+                    width:300px; 
+                    height: 150px;      
+                }
+            }
+            
+        }
+    }
+
+
+    #author{
+        #author-holder{
+            #info{
+                div{
+                    p,h4{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:22.5rem;
+                }
+            }
+        }
+    }
+
+    #contact{
+        #contact-holder{
+            #form{
+                width: 15rem;
+            }
+        }
+        iframe{
+            width: 25rem;
+            height: 25rem;
+        }
+    }
+
+    footer{
+        i{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
+    }
 }
 
-#projects #projects-holder {
-  margin: 3.5% auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-#projects #projects-holder img {
-  transition: 0.5s ease-in-out;
-}
-#projects #projects-holder img:hover {
-  transform: scale(1.05);
-  box-shadow: 4px 4px 25px #609c44;
+
+@media screen and (max-width: 768px){
+    #background{
+        height: 400px;
+
+        nav ul li{
+            padding-right:3.0rem;
+            font-size: 0.7rem;
+        }
+
+        #logo img{
+            width: 8rem;
+            height: 3.5rem;
+        }
+    
+
+        #heading-text{
+            h1{
+                font-size: 4rem;
+                letter-spacing: 0.3rem;
+            }
+            h2{
+                font-size: 0.8rem;
+                letter-spacing: 0.15rem;
+            }
+            i{
+                font-size:7rem;
+                text-shadow: 0.3rem 0.3rem $crna;
+            }
+        }
+    }
+
+
+    .title{
+        h3{
+            font-size: 2rem;
+        }
+    }
+    #skills{
+        #icon-holder{
+            .one-icon{
+                padding: 0.5rem;
+                i{
+                    font-size: 5rem;
+                }
+                p{
+                    font-size: 0.6rem;
+                }
+                span{
+                    font-size: 0.6rem;
+                }
+                progress{
+                    height: 8px;
+                }
+            }
+        }
+    }
+
+
+    figcaption{
+        font-size:1.0rem ;
+    }
+    #projects{
+        #projects-holder{
+            .one-project{
+                img{
+                    width:200px; 
+                    height: 100px;    
+                }
+            }
+            
+        }
+    }
+
+
+    #author{
+        #author-holder{
+            #info{
+                div{
+                    p,h4{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:16rem;
+                }
+            }
+        }
+    }
+
+    #contact{
+        #contact-holder{
+            #form{
+                width: 10rem;
+                form{
+                    input[type=text],input[type=password],input[type=email], textarea,button{
+                        padding:0.35rem;
+                        font-size: 0.7rem;
+                    }
+                    input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder, textarea::placeholder{
+                        padding:0.35rem;
+                        font-size: 0.7rem;
+                    }
+                    textarea{
+                        line-height: 0.8rem;
+                    }
+                    button{
+                        font-size: 0.7rem;
+                        padding:0.25rem;
+                    }
+                }
+            }
+        }
+        iframe{
+            width: 23rem;
+            height: 23rem;
+        }
+    }
+
+    footer{
+        i{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
 }
 
-#author #author-holder {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  margin: 5% auto;
-}
-#author #author-holder #info div {
-  margin: 10% auto;
-}
-#author #author-holder #info div p, #author #author-holder #info div h4 {
-  font-size: 2.1rem;
-}
-#author #author-holder #info div p {
-  color: #609c44;
-}
-#author #author-holder #pic img {
-  width: 30rem;
-  transition: 0.5s ease-in-out;
-}
-#author #author-holder #pic img:hover {
-  transform: scale(1.05);
-  box-shadow: 2px 2px 10px #609c44;
+
+
+@media screen and (max-width: 576px){
+    #background{
+        height: 320px;
+
+        nav ul li{
+            padding-right:2.5rem;
+            font-size: 0.5rem;
+        }
+
+        #logo img{
+            width: 6.5rem;
+            height: 2rem;
+        }
+    
+
+        #heading-text{
+            h1{
+                font-size: 3rem;
+                letter-spacing: 0.2rem;
+            }
+            h2{
+                font-size: 0.6rem;
+                letter-spacing: 0.1rem;
+            }
+            i{
+                font-size:6rem;
+                text-shadow: 0.2rem 0.2rem $crna;
+            }
+        }
+    }
+
+
+    .title{
+        h3{
+            font-size: 1.2rem;
+        }
+    }
+    #skills{
+        #icon-holder{
+            .one-icon{
+                padding: 0.4rem;
+                i{
+                    font-size: 3.5rem;
+                }
+                p{
+                    font-size: 0.35rem;
+                }
+                span{
+                    font-size: 0.4rem;
+                }
+                progress{
+                    height: 6px;
+                }
+            }
+        }
+    }
+
+
+    figcaption{
+        font-size:0.6rem ;
+    }
+    #projects{
+        #projects-holder{
+            .one-project{
+                padding: 2rem 0.7rem;
+                img{
+                    width:150px; 
+                    height: 80px;     
+                }
+            }
+            
+        }
+    }
+
+
+    #author{
+        #author-holder{
+            #info{
+                div{
+                    p,h4{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:11.5rem;
+                }
+            }
+        }
+    }
+
+#contact{
+        #contact-holder{
+            flex-direction: column;
+            #form{
+                width: 20rem;
+                margin-bottom: 4rem;
+                form{
+                    input[type=text],input[type=password],input[type=email], textarea,button{
+                        padding:0.55rem;
+                        font-size: 1rem;
+                    }
+                    input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder, textarea::placeholder{
+                        padding:0.55rem;
+                        font-size: 1rem;
+                    }
+                    textarea{
+                        line-height: 1.1rem;
+                    }
+                    button{
+                        font-size: 1rem;
+                        padding:0.45rem;
+                    }
+                }
+            }
+        }
+        iframe{
+            width: 23rem;
+            height: 23rem;
+        }
+    }
+
+    footer{
+        i{
+            font-size: 1.0rem;
+            padding:12.5px 35px;
+        }
+        p{
+            font-size: 0.9rem;
+        }
+    }
 }
 
-footer {
-  width: 100%;
-  background-color: #609c44;
-  color: #000;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-footer i {
-  padding: 15px 55px;
-  font-size: 1.7rem;
-}
-footer p {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
 
-@media screen and (min-width: 1440px) {
-  #background {
-    height: 900px;
-  }
-  #background nav ul li {
-    padding-right: 70px;
-    font-size: 160%;
-  }
-  #background #logo img {
-    width: 200px;
-    height: 130px;
-  }
-  #background #heading-text h1 {
-    font-size: 650%;
-    letter-spacing: 20px;
-  }
-  #background #heading-text h2 {
-    font-size: 200%;
-    letter-spacing: 10px;
-  }
-  #background #heading-text i {
-    font-size: 1800%;
-    text-shadow: 5px 5px #000;
-  }
-  .title h3 {
-    font-size: 350%;
-  }
-  #skills #icon-holder .one-icon i {
-    font-size: 1500%;
-  }
-  #skills #icon-holder .one-icon p {
-    font-size: 180%;
-  }
-  figcaption {
-    font-size: 2rem;
-  }
-  #projects #projects-holder img {
-    width: 32rem;
-  }
-  #author #author-holder #info div p, #author #author-holder #info div h4 {
-    font-size: 2.5rem;
-  }
-  #author #author-holder #pic img {
-    width: 32.5rem;
-  }
-  footer i {
-    font-size: 2rem;
-  }
-  footer p {
-    font-size: 1.9rem;
-  }
+
+@media screen and (max-width: 450px){
+    #background{
+        height: 280px;
+
+        #logo{
+            padding:0.5rem;
+        }
+        header div{
+            flex-direction: column;
+        }
+        nav{
+            padding-top:2px;
+            padding-bottom:10px;
+        }
+        nav ul li{
+            padding-right:2.5rem;
+            font-size: 0.7rem;
+        }
+
+        #logo img{
+            width: 5.5rem;
+            height: 1.1rem;
+        }
+    
+
+        #heading-text{
+            margin:7%;
+            h1,h2{
+                padding-bottom:3.5%;
+            }
+            h1{
+                font-size: 120%;
+                letter-spacing: 4px;
+                //word-wrap: break-word; //NE RADI!!!
+                display: inline-block; //NI OVO NE RADI!!!
+            }
+            h2{
+                font-size: 20%;
+                letter-spacing: 2px;
+            }
+            i{
+                font-size:5rem;
+                text-shadow: 0.1rem 0.1rem $crna;
+               /* padding-top:40%;*/
+            }
+        }
+    }
+
+    .title{
+        margin:4% auto;
+        h3{
+            font-size: 1.5rem;
+        }
+    }
+    #skills{
+        #icon-holder{
+            flex-direction: column;
+            .one-icon{
+                width: 75%;
+                padding:5% 0%;
+                i{
+                    font-size: 6rem;
+                }
+                p{
+                    font-size: 0.75rem;
+                }
+                span{
+                    font-size: 0.75rem;
+                }
+                progress{
+                    height: 10px;
+                }
+            }
+        }
+       
+    }
+
+
+    figcaption{
+        font-size:1rem ;
+    }
+    #projects{
+        #projects-holder{
+            justify-content: center;
+            .one-project{
+                
+                //padding: 2rem 0.7rem;
+                img{
+                    width:220px; 
+                    height: 120px;      
+                }
+            }
+            
+        }
+    }
+
+
+    #author{
+        #author-holder{
+            flex-direction: column;
+            #info{
+                order:2;
+                padding-top:5%;
+                div{
+                    p,h4{
+                        font-size: 1.0rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:12.5rem;
+                    order:1;
+                }
+            }
+        }
+    }
+
+    #contact{
+        #contact-holder{
+            flex-direction: column;
+            #form{
+                width: 15rem;
+                margin-bottom: 2.5rem;
+                form{
+                    input[type=text],input[type=password],input[type=email], textarea,button{
+                        padding:0.35rem;
+                        font-size: 0.75rem;
+                    }
+                    input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder, textarea::placeholder{
+                        padding:0.35rem;
+                        font-size: 0.75rem;
+                    }
+                    textarea{
+                        line-height: 0.8rem;
+                    }
+                    button{
+                        font-size: 0.70rem;
+                        padding:0.25rem;
+                    }
+                }
+            }
+        }
+        iframe{
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+
+    footer{
+        i{
+            padding:10px 25px;
+            font-size: 0.85rem;
+        }
+        p{
+            font-size: 0.75rem;
+        }
+    }
 }
-@media screen and (max-width: 1024px) {
-  #background {
-    height: 600px;
-  }
-  #background nav ul li {
-    padding-right: 50px;
-    font-size: 140%;
-  }
-  #background #logo img {
-    width: 140px;
-    height: 70px;
-  }
-  #background #heading-text h1 {
-    font-size: 400%;
-    letter-spacing: 10px;
-  }
-  #background #heading-text h2 {
-    font-size: 120%;
-    letter-spacing: 4px;
-  }
-  #background #heading-text i {
-    font-size: 1200%;
-    text-shadow: 5px 5px #000;
-  }
-  .title h3 {
-    font-size: 200%;
-  }
-  #skills #icon-holder .one-icon {
-    /*padding:2% 3%;*/
-  }
-  #skills #icon-holder .one-icon i {
-    font-size: 800%;
-  }
-  #skills #icon-holder .one-icon p {
-    font-size: 120%;
-  }
-  figcaption {
-    font-size: 1.3rem;
-  }
-  #projects #projects-holder img {
-    width: 22rem;
-  }
-  #author #author-holder #info div p, #author #author-holder #info div h4 {
-    font-size: 1.5rem;
-  }
-  #author #author-holder #pic img {
-    width: 22.5rem;
-  }
-  footer i {
-    font-size: 1.5rem;
-  }
-  footer p {
-    font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  #background {
-    height: 400px;
-  }
-  #background nav ul li {
-    padding-right: 35px;
-    font-size: 115%;
-  }
-  #background #logo img {
-    width: 130px;
-    height: 60px;
-  }
-  #background #heading-text h1 {
-    font-size: 320%;
-    letter-spacing: 7px;
-  }
-  #background #heading-text h2 {
-    font-size: 100%;
-    letter-spacing: 3px;
-  }
-  #background #heading-text i {
-    font-size: 1000%;
-    text-shadow: 5px 5px #000;
-  }
-  .title h3 {
-    font-size: 160%;
-  }
-  #skills #icon-holder .one-icon {
-    padding: 2% 3%;
-  }
-  #skills #icon-holder .one-icon i {
-    font-size: 600%;
-  }
-  #skills #icon-holder .one-icon p {
-    font-size: 100%;
-  }
-  figcaption {
-    font-size: 1rem;
-  }
-  #projects #projects-holder img {
-    width: 17rem;
-  }
-  #author #author-holder #info div p, #author #author-holder #info div h4 {
-    font-size: 1.2rem;
-  }
-  #author #author-holder #pic img {
-    width: 16rem;
-  }
-  footer i {
-    font-size: 1.3rem;
-  }
-  footer p {
-    font-size: 1.1rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  #background {
-    height: 320px;
-  }
-  #background nav ul li {
-    padding-right: 30px;
-    font-size: 80%;
-  }
-  #background #logo img {
-    width: 100px;
-    height: 30px;
-  }
-  #background #heading-text h1 {
-    font-size: 270%;
-    letter-spacing: 6px;
-  }
-  #background #heading-text h2 {
-    font-size: 80%;
-    letter-spacing: 2.5px;
-  }
-  #background #heading-text i {
-    font-size: 750%;
-    text-shadow: 3.5px 3.5px #000;
-  }
-  .title h3 {
-    font-size: 130%;
-  }
-  #skills #icon-holder .one-icon {
-    padding: 2%;
-  }
-  #skills #icon-holder .one-icon i {
-    font-size: 400%;
-  }
-  #skills #icon-holder .one-icon p {
-    font-size: 80%;
-  }
-  figcaption {
-    font-size: 0.6rem;
-  }
-  #projects #projects-holder img {
-    width: 12.5rem;
-  }
-  #author #author-holder #info div p, #author #author-holder #info div h4 {
-    font-size: 0.8rem;
-  }
-  #author #author-holder #pic img {
-    width: 11.5rem;
-  }
-  footer i {
-    font-size: 1rem;
-    padding: 12.5px 35px;
-  }
-  footer p {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 450px) {
-  #background {
-    height: 280px;
-  }
-  #background #logo {
-    display: none;
-  }
-  #background header div {
-    flex-direction: column;
-  }
-  #background nav {
-    padding-top: 2px;
-    padding-bottom: 10px;
-  }
-  #background nav ul li {
-    padding-right: 20px;
-    font-size: 60%;
-  }
-  #background #logo img {
-    width: 90px;
-    height: 20px;
-  }
-  #background #heading-text {
-    margin: 7%;
-  }
-  #background #heading-text h1, #background #heading-text h2 {
-    padding-bottom: 3.5%;
-  }
-  #background #heading-text h1 {
-    font-size: 120%;
-    letter-spacing: 4px;
-    display: inline-block;
-  }
-  #background #heading-text h2 {
-    font-size: 20%;
-    letter-spacing: 2px;
-  }
-  #background #heading-text i {
-    font-size: 450%;
-    text-shadow: 2px 2px #000;
-    padding-top: 40%;
-  }
-  .title {
-    margin: 4% auto;
-  }
-  .title h3 {
-    font-size: 115%;
-  }
-  #skills #icon-holder {
-    flex-direction: column;
-  }
-  #skills #icon-holder .one-icon {
-    width: 65%;
-    padding: 5% 0%;
-  }
-  #skills #icon-holder .one-icon i {
-    font-size: 500%;
-  }
-  #skills #icon-holder .one-icon p {
-    font-size: 50%;
-  }
-  figcaption {
-    font-size: 0.7rem;
-  }
-  #projects #projects-holder img {
-    width: 14rem;
-  }
-  #author #author-holder {
-    flex-direction: column;
-  }
-  #author #author-holder #info {
-    order: 2;
-    padding-top: 5%;
-  }
-  #author #author-holder #info div p, #author #author-holder #info div h4 {
-    font-size: 1rem;
-  }
-  #author #author-holder #pic img {
-    width: 12.5rem;
-    order: 1;
-  }
-  footer i {
-    padding: 10px 25px;
-    font-size: 0.85rem;
-  }
-  footer p {
-    font-size: 0.75rem;
-  }
-}/*# sourceMappingURL=responsive.css.map */
