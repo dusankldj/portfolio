@@ -1,0 +1,1161 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+
+$bela:#FFF;
+$zelena:#609c44;
+$crna:#000;
+$font:'Exo 2', sans-serif;;
+
+@mixin flex-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin form-text{
+    color:$zelena;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: $font
+}
+@mixin back-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+body{
+    font-family: $font;
+    background-color: $crna;
+}
+html{
+    scroll-behavior: smooth;
+}
+hr{
+    border:1.5px solid $zelena;
+    width: 90%;
+    margin:0px 5%;
+}
+figcaption{
+    padding-top:2%;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5rem;
+    color:$zelena;
+}
+a{
+    text-decoration: none;
+}
+
+
+.title {
+    margin: 2% auto;
+h3{
+   font-size: 3rem; 
+   text-align: center;
+   color: $bela;
+}
+}
+
+
+
+#background {
+    background-image: url("..//images/background4.jpg");
+    @include back-img();
+    height:700px;
+
+
+    header{
+        background-color: $crna;
+        color:$bela;
+    }
+    .centering{
+        margin:auto 5%;
+    }
+    .flex{
+        @include flex-block();
+    }
+    nav ul{
+        list-style-type: none;
+    }
+    nav ul li{
+        display: inline;
+        padding-right:3rem;
+        font-size: 1.5rem;
+
+        a{
+            transition:  0.5s ease-in-out;
+            text-decoration: none;
+            color:$bela;
+        }
+        a:hover{
+            color:$zelena;
+            text-decoration: underline;
+        }
+    }
+    nav ul li:last-child{
+        padding-right:0px;
+    }
+    
+    #logo img{
+        width: 10rem;
+        height: 5.6rem;
+    }
+
+
+    #heading-text{
+    margin:5%;
+    @include flex-block();
+    flex-direction: column;
+   
+    h1,h2{
+        text-transform: uppercase;
+        color:$bela;
+        font-weight: bold;
+        text-align: center;
+    }
+    h1{
+        font-size: 6.5rem;
+        letter-spacing: 0.7rem;
+        word-spacing: 0.5rem;
+        text-shadow: 0.45rem 0.45rem $crna;
+    }
+    h2{
+        padding-top: 3%;
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+        text-transform: lowercase;
+        text-shadow: 0.25rem 0.25rem $crna;
+    }
+    i{
+        font-size:8.5rem;
+        color:$bela;
+        text-shadow: 0.2rem 0.2rem $crna;
+        padding-top: 45%;
+        animation-name: animacija;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    }
+}
+
+
+@keyframes animacija {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20%);
+    }
+    100% {
+      transform: translateY(0);
+}}
+
+
+
+
+.section{
+    @include flex-block();
+    flex-direction: column;
+    background-color: $crna;
+    color: $bela;
+}
+
+span{
+    color:$zelena;
+    text-align: right;
+    font-weight: bold;
+    font-family: $font;
+    padding-top: 0.75rem
+}
+
+#skills {
+
+   #icon-holder {
+    @include flex-block();
+    margin: 5%;
+    margin-top:0%;
+  
+    .one-icon {
+        @include flex-block();
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;   
+        width: 25%;
+
+        i{
+        font-size: 6rem;
+        transition: transform 0.5s;
+        }
+        i:hover {
+        transform: scale(1.2);
+        color:$zelena;
+        }
+
+        p{
+            font-size: 1rem;
+            color:$zelena;
+            font-weight: bold;
+            text-align: justify;
+            padding:1rem;
+        }
+
+
+        
+        progress {
+            background-color:$zelena;
+            height: 12px;
+            width: 90%;
+        }
+        progress[value]::-webkit-progress-bar {
+            background-color: $bela;
+        }
+    }  
+  } 
+}
+
+#projects{
+    #projects-holder{
+        @include flex-block();
+        justify-content: space-evenly;
+        margin: 5%;
+        margin-top:2.5%;
+       
+
+        .one-project{
+            padding: 2.5rem 1.5rem;            
+            img{
+                transition:  0.5s ease-in-out;
+            }
+            img:hover{
+                transform: scale(1.05);
+                box-shadow: 0.3rem 0.3rem 1.25rem $zelena; 
+            }
+        }
+       
+    }
+}
+
+
+#author{
+    background-image: url("..//images/man.jpg");
+    @include back-img();
+    #author-holder{
+        @include flex-block();
+        justify-content:space-around;
+        width: 100%;
+        margin:5% auto;
+        #info{            
+            div{
+                margin:10% auto;
+                p,h4{
+                    font-size: 2.1rem;
+                }
+                p{
+                    color:$zelena;
+                }
+            }
+        }
+        #pic{
+            img{
+                width: 25rem;
+                transition:  0.5s ease-in-out;
+            }
+            img:hover{
+                transform: scale(1.05);
+                box-shadow: 0.125rem 0.125rem 0.6rem $zelena;
+            }
+        }
+    }
+}
+
+#contact{
+    margin:2% auto;
+    flex-direction: column;
+    width: 90%;
+    #contact-holder{
+        @include flex-block();
+        justify-content: space-around !important; 
+        flex-direction: row;
+        margin:4rem auto;
+
+        #form{
+            width: 20rem;
+
+            form{
+                width: 100%;
+
+                input[type=text],input[type=password],input[type=email], textarea,button{
+                    width: 95%;
+                    padding:0.65rem;
+                    margin:1rem auto;
+                    @include form-text();
+                }
+                input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder, textarea::placeholder{
+                   @include form-text();
+                }
+
+                textarea{
+                    max-width: 25rem; 
+                    line-height: 1.5rem;
+                }
+                #submit{
+                    width: 100%;
+                    text-align: center;
+                    button{
+                    width:35%;
+                    color:$crna;
+                    }
+
+                }
+                
+            }
+        }
+    }
+
+    iframe{
+        width:30rem;
+        height: 30rem;
+    }
+}
+
+
+#services{
+    @include flex-block();
+    flex-direction: column;
+    width: 100%;
+
+    #services-holder{
+        @include flex-block();
+        justify-content: space-around;
+        margin:2% auto;
+        width: 100%;
+
+        .one-service{
+            @include flex-block();
+            flex-direction: column;
+            width: 25%;
+            p,i{
+                padding:1rem;
+            }
+            i{
+                font-size: 6rem;
+                color:$bela;
+                transition: transform 0.5s;
+            }
+            i:hover {
+                transform: scale(1.2);
+                color:$zelena;
+                }
+            p{
+                font-size: 1rem;
+                font-weight: bold;
+                color: $zelena;
+                text-align: justify;
+            }
+            h4{
+                font-size: 1.25rem;
+                color:$bela;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+
+footer{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: $zelena;
+    color:$crna;
+    @include flex-block();
+    justify-content: space-between;
+    div{
+        width: 30%;
+    }
+    #first{
+        text-align: left;
+    }
+    #last{
+        text-align: right;
+    }
+    #first,#last{
+        margin:1% 2%;
+    }
+    nav ul li{
+        display: inline;
+        
+        i{
+            font-size:1.3rem;
+            padding:0px 25px;
+        }
+    }
+    
+    p{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    a{
+        color:$crna;
+        transition: 0.5s ease-in-out;
+    }
+    a:hover{
+        color:$bela;
+    }
+}
+
+
+
+@import "style.scss";
+
+@media screen and (min-width: 1440px){
+    #background{
+        height: 900px;
+
+        nav ul li{
+            padding-right:4rem;
+            font-size: 1.75rem;
+        }
+
+        #logo img{
+            width: 12.5rem;
+            height: 8.1rem;
+        }
+    
+        #heading-text{
+            h1{
+                font-size: 7rem;
+                letter-spacing: 0.85rem;
+            }
+            h2{
+                font-size: 2rem;
+                letter-spacing: 0.7rem;
+            }
+            i{
+                font-size:9rem;
+                text-shadow: 0.35rem 0.35rem $crna;
+            }
+        }
+    }
+
+    .title{
+        h3{
+            font-size: 3.3rem;
+        }
+    }
+    #skills{
+        #icon-holder{
+            .one-icon{
+                i{
+                    font-size: 8rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+                span{
+                    font-size: 1.5rem;
+                }
+                progress{
+                    height: 14px;
+                }
+            }
+        }
+       
+    }
+   
+    figcaption{
+        font-size:2rem ;
+    }
+    #projects{
+        #projects-holder{
+            .one-project{
+               img{
+                width:600px; 
+                height: 350px;      
+            }
+            }  
+        }
+           
+    }
+
+    #author{
+        #author-holder{
+            #info{
+                div{
+                    p,h4{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:32.5rem;
+                }
+            }
+        }
+    }
+
+    #contact{
+        #contact-holder{
+            #form{
+                width: 25rem;
+            }
+        }
+        iframe{
+            width: 35rem;
+            height: 35rem;
+        }
+    }
+
+    #services{
+        #services-holder{
+            .one-service{
+                i{
+                    font-size: 7rem;
+                }
+                p{
+                    font-size: 1.25rem;
+                }
+                h4{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    footer{
+        height: 60px;
+        nav ul li{
+         i{
+            font-size: 1.5rem;
+            padding:0px 20px;
+         }
+        }
+        p{
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #background{
+        height: 600px;
+
+        nav ul li{
+            padding-right:3.3rem;
+            font-size: 1.0rem;
+        }
+
+        #logo img{
+            width: 9rem;
+            height: 4.5rem;
+        }
+    
+
+        #heading-text{
+            h1{
+                font-size: 4.5rem;
+                letter-spacing: 0.5rem;
+            }
+            h2{
+                font-size: 1.0rem;
+                letter-spacing: 0.3rem;
+            }
+            i{
+                font-size:8rem;
+            }
+        }
+    }
+
+
+    .title{
+        h3{
+            font-size: 2.5rem;
+        }
+    }
+    #skills{
+        #icon-holder{
+            .one-icon{
+                i{
+                    font-size: 5.5rem;
+                }
+                p{
+                    font-size: 0.8rem;
+                }
+                span{
+                    font-size: 0.8rem;
+                }
+                progress{
+                    height: 10px;
+                }
+            }
+        }
+       
+    }
+    
+
+
+    figcaption{
+        font-size:1.3rem ;
+    }
+    #projects{
+        #projects-holder{
+            .one-project{
+                padding: 2rem 0.7rem;
+                img{
+                    width:300px; 
+                    height: 150px;      
+                }
+            }
+            
+        }
+    }
+
+
+    #author{
+        #author-holder{
+            #info{
+                div{
+                    p,h4{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:22.5rem;
+                }
+            }
+        }
+    }
+
+    #contact{
+        #contact-holder{
+            #form{
+                width: 15rem;
+            }
+        }
+        iframe{
+            width: 25rem;
+            height: 25rem;
+        }
+    }
+
+    #services{
+        #services-holder{
+            .one-service{
+                i{
+                    font-size: 5rem;
+                }
+                p{
+                    font-size: 0.75rem;
+                }
+                h4{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    footer{
+        nav ul li{
+         i{
+            font-size: 1.1rem;
+            padding:0px 20px;
+         }
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    #background{
+        height: 400px;
+
+        nav ul li{
+            padding-right:1rem;
+            font-size: 0.8rem;
+        }
+
+        #logo img{
+            width: 7rem;
+            height: 3.5rem;
+        }
+    
+
+        #heading-text{
+            h1{
+                font-size: 4rem;
+                letter-spacing: 0.3rem;
+            }
+            h2{
+                font-size: 0.8rem;
+                letter-spacing: 0.15rem;
+            }
+            i{
+                font-size:7rem;
+                text-shadow: 0.3rem 0.3rem $crna;
+            }
+        }
+    }
+
+
+    .title{
+        h3{
+            font-size: 2rem;
+        }
+    }
+    #skills{
+        #icon-holder{
+            .one-icon{
+                padding: 0.5rem;
+                i{
+                    font-size: 5rem;
+                }
+                p{
+                    font-size: 0.6rem;
+                }
+                span{
+                    font-size: 0.6rem;
+                }
+                progress{
+                    height: 8px;
+                }
+            }
+        }
+    }
+
+
+    figcaption{
+        font-size:1.0rem ;
+    }
+    #projects{
+        #projects-holder{
+            .one-project{
+                img{
+                    width:200px; 
+                    height: 100px;    
+                }
+            }
+            
+        }
+    }
+
+
+    #author{
+        #author-holder{
+            #info{
+                div{
+                    p,h4{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:16rem;
+                }
+            }
+        }
+    }
+
+    #contact{
+        #contact-holder{
+            #form{
+                width: 10rem;
+                form{
+                    input[type=text],input[type=password],input[type=email], textarea,button{
+                        padding:0.35rem;
+                        font-size: 0.7rem;
+                    }
+                    input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder, textarea::placeholder{
+                        padding:0.35rem;
+                        font-size: 0.7rem;
+                    }
+                    textarea{
+                        line-height: 0.8rem;
+                    }
+                    button{
+                        font-size: 0.7rem;
+                        padding:0.25rem;
+                    }
+                }
+            }
+        }
+        iframe{
+            width: 23rem;
+            height: 23rem;
+        }
+    }
+
+    #services{
+        #services-holder{
+            .one-service{
+                i{
+                    font-size: 4rem;
+                }
+                p{
+                    font-size: 0.55rem;
+                }
+                h4{
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+
+    footer{
+        height: 40px;
+        nav ul li{
+         i{
+            font-size: 0.9rem;
+            padding:0px 15px;
+         }
+        }
+        p{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 576px){
+    #background{
+        height: 320px;
+
+        nav ul li{
+            padding-right:0.75rem;
+            font-size: 0.7rem;
+        }
+
+        #logo img{
+            width: 6.5rem;
+            height: 3rem;
+        }
+    
+
+        #heading-text{
+            h1{
+                font-size: 3rem;
+                letter-spacing: 0.2rem;
+            }
+            h2{
+                font-size: 0.6rem;
+                letter-spacing: 0.1rem;
+            }
+            i{
+                font-size:6rem;
+                text-shadow: 0.2rem 0.2rem $crna;
+            }
+        }
+    }
+
+
+    .title{
+        h3{
+            font-size: 1.2rem;
+        }
+    }
+    #skills{
+        #icon-holder{
+            .one-icon{
+                padding: 0.4rem;
+                i{
+                    font-size: 3.5rem;
+                }
+                p{
+                    font-size: 0.35rem;
+                }
+                span{
+                    font-size: 0.4rem;
+                }
+                progress{
+                    height: 6px;
+                }
+            }
+        }
+    }
+
+
+    figcaption{
+        font-size:0.6rem ;
+    }
+    #projects{
+        #projects-holder{
+            .one-project{
+                padding: 2rem 0.7rem;
+                img{
+                    width:150px; 
+                    height: 80px;     
+                }
+            }
+            
+        }
+    }
+
+
+    #author{
+        #author-holder{
+            #info{
+                div{
+                    p,h4{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:11.5rem;
+                }
+            }
+        }
+    }
+
+#contact{
+        #contact-holder{
+            flex-direction: column;
+            #form{
+                width: 20rem;
+                margin-bottom: 4rem;
+                form{
+                    input[type=text],input[type=password],input[type=email], textarea,button{
+                        padding:0.55rem;
+                        font-size: 1rem;
+                    }
+                    input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder, textarea::placeholder{
+                        padding:0.55rem;
+                        font-size: 1rem;
+                    }
+                    textarea{
+                        line-height: 1.1rem;
+                    }
+                    button{
+                        font-size: 1rem;
+                        padding:0.45rem;
+                    }
+                }
+            }
+        }
+        iframe{
+            width: 23rem;
+            height: 23rem;
+        }
+    }
+
+    #services{
+        #services-holder{
+            .one-service{
+                i{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 0.35rem;
+                }
+                h4{
+                    font-size: 0.3rem;
+                }
+            }
+        }
+    }
+
+    footer{
+        height: 30px;
+        nav ul li{
+         i{
+            font-size: 0.65rem;
+            padding:0px 10px;
+         }
+        }
+        p{
+            font-size: 0.65rem;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 450px){
+    hr{
+        border:0.7px solid $zelena;
+    }
+    
+    #background{
+        height: 650px;
+
+        #logo{
+            padding:0.5rem;
+        }
+        header div{
+            flex-direction: column;
+        }
+        nav{
+            padding-top:2px;
+            padding-bottom:10px;
+        }
+        nav ul li{
+            padding-right:1rem;
+            font-size: 0.85rem;
+        }
+
+        #logo img{
+            width: 5.5rem;
+            height: 2.9rem;
+        }
+    
+
+        #heading-text{
+            margin:75px auto;
+            h1{
+                font-size: 2.5rem;
+                letter-spacing: 0.3rem;
+            }
+            h2{
+                font-size: 1rem;
+                letter-spacing: 0.2rem;
+            }
+            i{
+                font-size:7rem;
+                text-shadow: 0.25rem 0.25rem $crna;
+            }
+        }
+    }
+
+    .title{
+        margin:4% auto;
+        h3{
+            font-size: 1.5rem;
+        }
+    }
+    #skills{
+        #icon-holder{
+            flex-direction: column;
+            .one-icon{
+                width: 75%;
+                padding:5% 0%;
+                i{
+                    font-size: 6rem;
+                }
+                p{
+                    font-size: 0.75rem;
+                }
+                span{
+                    font-size: 0.75rem;
+                }
+                progress{
+                    height: 10px;
+                }
+            }
+        }
+       
+    }
+
+
+    figcaption{
+        font-size:1rem ;
+    }
+    #projects{
+        #projects-holder{
+            justify-content: center;
+            .one-project{
+            
+                img{
+                    width:220px; 
+                    height: 120px;      
+                }
+            }
+            
+        }
+    }
+
+
+    #author{
+        #author-holder{
+            flex-direction: column;
+            #info{
+                order:2;
+                padding-top:5%;
+                div{
+                    p,h4{
+                        font-size: 1.0rem;
+                    }
+                }
+            }
+            #pic{
+                img{
+                    width:12.5rem;
+                    order:1;
+                }
+            }
+        }
+    }
+
+    #contact{
+        #contact-holder{
+            flex-direction: column;
+            #form{
+                width: 15rem;
+                margin-bottom: 2.5rem;
+                form{
+                    input[type=text],input[type=password],input[type=email], textarea,button{
+                        padding:0.35rem;
+                        font-size: 0.75rem;
+                    }
+                    input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder, textarea::placeholder{
+                        padding:0.35rem;
+                        font-size: 0.75rem;
+                    }
+                    textarea{
+                        line-height: 0.8rem;
+                    }
+                    button{
+                        font-size: 0.70rem;
+                        padding:0.25rem;
+                    }
+                }
+            }
+        }
+        iframe{
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+
+    #services{
+        #services-holder{
+            flex-direction: column;
+            .one-service{
+                width: 75%;
+                i{
+                    font-size: 6rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                h4{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    footer{
+        height: 45px;
+        nav ul li{
+         i{
+            font-size: 0.95rem;
+            padding:0px 10px;
+         }
+        }
+        p{
+            font-size: 0.95rem;
+        }
+    }
+}
