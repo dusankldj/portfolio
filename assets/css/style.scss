@@ -5,10 +5,8 @@
 
 
 $bela:#FFF;
-$pozadinska:#f0f7ed;
 $zelena:#609c44;
 $crna:#000;
-$siva:#525252;
 $font:'Exo 2', sans-serif;;
 
 @mixin flex-block{
@@ -109,18 +107,15 @@ h3{
 
 
     #heading-text{
-     margin:5%;
-    /*display: flex;
-    flex-direction: column;
-    text-align: center;*/
+    margin:5%;
     @include flex-block();
     flex-direction: column;
    
     h1,h2{
         text-transform: uppercase;
         color:$bela;
-       /* background-color: $crna;*/
         font-weight: bold;
+        text-align: center;
     }
     h1{
         font-size: 6.5rem;
@@ -189,12 +184,10 @@ span{
         flex-direction: column;
         padding: 2rem;
         text-align: center;   
-       /* width: 15%; KADA SE STAVI SIRINA OVDE GUBI SE RESPONSIVE SVOJSTVO, PITATI!!! SVE VREME JE GRESKA BILA OVDE*/
         width: 25%;
 
         i{
         font-size: 6rem;
-       // padding: 1rem;
         transition: transform 0.5s;
         }
         i:hover {
@@ -236,8 +229,6 @@ span{
             padding: 2.5rem 1.5rem;            
             img{
                 transition:  0.5s ease-in-out;
-               /* width: 500px;
-                height: 250px;*/
             }
             img:hover{
                 transform: scale(1.05);
@@ -289,7 +280,6 @@ span{
         @include flex-block();
         justify-content: space-around !important; 
         flex-direction: row;
-       // width: 100%;
         margin:4rem auto;
 
         #form{
@@ -309,7 +299,7 @@ span{
                 }
 
                 textarea{
-                    max-width: 25rem; //STAVITI OSTALE MAX-WIDTH 25rem
+                    max-width: 25rem; 
                     line-height: 1.5rem;
                 }
                 #submit{
@@ -393,22 +383,18 @@ footer{
     #last{
         text-align: right;
     }
+    #first,#last{
+        margin:1% 2%;
+    }
     nav ul li{
         display: inline;
         
         i{
-            font-size:1.2rem;
-            padding:0px 20px;
+            font-size:1.3rem;
+            padding:0px 25px;
         }
     }
-    nav ul li:first-child{
-        padding-left:60px;
-    }
     
-    i{
-        font-size:1.2rem;
-        padding-right:60px;
-    }
     p{
         font-size: 1.3rem;
         font-weight: bold;
