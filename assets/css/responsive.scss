@@ -63,7 +63,7 @@
             .one-project{
                img{
                 width:600px; 
-                height: 350px;      //SVE PREBACITI U REM
+                height: 350px;      
             }
             }  
         }
@@ -116,19 +116,17 @@
     }
 
     footer{
+        height: 60px;
         nav ul li{
          i{
-             font-size: 1.5rem;
-             padding:0px 20px;
+            font-size: 1.5rem;
+            padding:0px 20px;
          }
         }
-        i{
-             font-size: 1.5rem;
-        }
         p{
-             font-size: 1.6rem;
+            font-size: 1.6rem;
         }
-     }
+    }
 }
 
 @media screen and (max-width: 1024px){
@@ -157,7 +155,6 @@
             }
             i{
                 font-size:8rem;
-                /*text-shadow: 5px 5px $crna;*/
             }
         }
     }
@@ -253,18 +250,15 @@
     }
 
     footer{
-       nav ul li{
-        i{
-            font-size: 1.0rem;
-            padding:0px 15px;
-        }
-       }
-       i{
-            font-size: 1.0rem;
-       }
-       p{
+        nav ul li{
+         i{
             font-size: 1.1rem;
-       }
+            padding:0px 20px;
+         }
+        }
+        p{
+            font-size: 1.1rem;
+        }
     }
 }
 
@@ -406,19 +400,17 @@
     }
 
     footer{
+        height: 40px;
         nav ul li{
          i{
-             font-size: 0.8rem;
-             padding:0px 12px;
+            font-size: 0.9rem;
+            padding:0px 15px;
          }
         }
-        i{
-            font-size: 0.8rem;
-        }
         p{
-             font-size: 0.9rem;
+            font-size: 0.9rem;
         }
-     }
+    }
 }
 
 
@@ -563,29 +555,26 @@
     }
 
     footer{
+        height: 30px;
         nav ul li{
-            text-align: left;
          i{
-            font-size: 0.6rem;
-            padding:0px 5px;
+            font-size: 0.65rem;
+            padding:0px 10px;
          }
-         nav ul li:first-child{
-            padding-left:-10px;
-        }
-        }
-        i{
-            font-size: 0.6rem;
-            padding-right:60px;
         }
         p{
-             font-size: 0.6rem;
+            font-size: 0.65rem;
         }
-     }
+    }
 }
 
 
 
 @media screen and (max-width: 450px){
+    hr{
+        border:0.7px solid $zelena;
+    }
+    
     #background{
         height: 650px;
 
@@ -601,34 +590,28 @@
         }
         nav ul li{
             padding-right:1rem;
-            font-size: 0.65rem;
+            font-size: 0.85rem;
         }
 
         #logo img{
-            width: 5rem;
-            height: 2.5rem;
+            width: 5.5rem;
+            height: 2.9rem;
         }
     
 
         #heading-text{
-            margin:7%;
-            h1,h2{
-                padding-bottom:3.5%;
-            }
+            margin:75px auto;
             h1{
-                font-size: 120%;
-                letter-spacing: 4px;
-                //word-wrap: break-word; //NE RADI!!!
-                display: inline-block; //NI OVO NE RADI!!!
+                font-size: 2.5rem;
+                letter-spacing: 0.3rem;
             }
             h2{
-                font-size: 20%;
-                letter-spacing: 2px;
+                font-size: 1rem;
+                letter-spacing: 0.2rem;
             }
             i{
-                font-size:5rem;
-                text-shadow: 0.1rem 0.1rem $crna;
-               /* padding-top:40%;*/
+                font-size:7rem;
+                text-shadow: 0.25rem 0.25rem $crna;
             }
         }
     }
@@ -670,8 +653,7 @@
         #projects-holder{
             justify-content: center;
             .one-project{
-                
-                //padding: 2rem 0.7rem;
+            
                 img{
                     width:220px; 
                     height: 120px;      
@@ -753,23 +735,15 @@
     }
 
     footer{
-        height: 25px;
+        height: 45px;
         nav ul li{
-            text-align: left;
          i{
-            font-size: 0.3rem;
-            padding:0px 4px;
+            font-size: 0.95rem;
+            padding:0px 10px;
          }
-         nav ul li:first-child{
-            padding-left:-30px;
-        }
-        }
-        i{
-            font-size: 0.65rem;
-            padding-right:10px;
         }
         p{
-             font-size: 0.6rem;
+            font-size: 0.95rem;
         }
-     }
+    }
 }
