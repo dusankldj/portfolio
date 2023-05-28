@@ -86,9 +86,6 @@ a {
 }
 #background #heading-text {
   margin: 5%;
-  /*display: flex;
-  flex-direction: column;
-  text-align: center;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -98,8 +95,8 @@ a {
 #background #heading-text h1, #background #heading-text h2 {
   text-transform: uppercase;
   color: #FFF;
-  /* background-color: $crna;*/
   font-weight: bold;
+  text-align: center;
 }
 #background #heading-text h1 {
   font-size: 6.5rem;
@@ -169,7 +166,6 @@ span {
   flex-direction: column;
   padding: 2rem;
   text-align: center;
-  /* width: 15%; KADA SE STAVI SIRINA OVDE GUBI SE RESPONSIVE SVOJSTVO, PITATI!!! SVE VREME JE GRESKA BILA OVDE*/
   width: 25%;
 }
 #skills #icon-holder .one-icon i {
@@ -210,8 +206,6 @@ span {
 }
 #projects #projects-holder .one-project img {
   transition: 0.5s ease-in-out;
-  /* width: 500px;
-   height: 250px;*/
 }
 #projects #projects-holder .one-project img:hover {
   transform: scale(1.05);
@@ -379,19 +373,15 @@ footer #first {
 footer #last {
   text-align: right;
 }
+footer #first, footer #last {
+  margin: 1% 2%;
+}
 footer nav ul li {
   display: inline;
 }
 footer nav ul li i {
-  font-size: 1.2rem;
-  padding: 0px 20px;
-}
-footer nav ul li:first-child {
-  padding-left: 60px;
-}
-footer i {
-  font-size: 1.2rem;
-  padding-right: 60px;
+  font-size: 1.3rem;
+  padding: 0px 25px;
 }
 footer p {
   font-size: 1.3rem;
